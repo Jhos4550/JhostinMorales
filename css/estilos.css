@@ -81,4 +81,11 @@ footer{
     color: white;
     border-radius: 8px;
     margin-top: 20px;
+    footer a{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    flex: 2;
+    }
 }
