@@ -1,8 +1,6 @@
-
-
 function triste(){
     document.getElementById('carita').src='images/sad.png';
-    alert("Po que ta triste mano");
+    alert;
 }
 function feliz(){
     document.getElementById('carita').src='images/happy.png';
