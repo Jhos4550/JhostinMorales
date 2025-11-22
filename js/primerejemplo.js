@@ -1,3 +1,5 @@
+console.log("Hola Mundo");
+
 function triste(){
     document.getElementById('carita').src='images/sad.png';
     alert;
