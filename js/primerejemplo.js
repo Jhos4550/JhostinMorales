@@ -10,7 +10,7 @@ function cambiarColor(){
 
 }
 function cambiarLogo(){
-    document.getElementById('logo').src='imagenes/logo2';
+    document.getElementById('logo').src='imagenes/logo2.jpg';
 }
 function cambiarFondo(){
      document.getElementById('menu').style.background='#524604';
