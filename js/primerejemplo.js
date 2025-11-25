@@ -1,6 +1,6 @@
 function triste(){
     document.getElementById('carita').src='imagenes/trite.png';
-    alert; 
+    alert; poque tite ta tite la wawa
 }
 function feliz(){
     document.getElementById('carita').src='imagenes/feliz.png';
