@@ -13,7 +13,7 @@ function cambiarLogo(){
     document.getElementById('logo').src='imagenes/logo2.png';
 }
 function cambiarFondo(){
-     document.getElementById('menu').style.background='#524604';
+     document.getElementById('menu').style.background='#ad2121ff';
 }
 function cambiodeTexto(){
     document.getElementById('Subtitulo').textContent="YA LE SE AL JS";
