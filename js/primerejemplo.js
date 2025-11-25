@@ -12,7 +12,7 @@ function cambiarLogo(){
     document.getElementById('logo').src='imagenes/logo2.png';
 }
 function cambiarFondo(){
-     document.getElementById('menu').style.background='#00ff9dff';
+     document.getElementById('logo').style.background='#00ff9dff';
 }
 function cambiodeTexto(){
     document.getElementById('Subtitulo').textContent="hjdf";
