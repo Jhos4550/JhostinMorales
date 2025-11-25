@@ -3,7 +3,7 @@ function triste(){
     alert;
 }
 function feliz(){
-    document.getElementById('carita').src='images/feliz.png';
+    document.getElementById('carita').src='imagenes/feliz.png';
 }
 function cambiarColor(){
     document.getElementById('menu').style.color='#e100ffff';
