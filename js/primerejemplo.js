@@ -1,5 +1,5 @@
 function triste(){
-    document.getElementById('carita').src='images/trite.png';
+    document.getElementById('carita').src='imagenes/trite.png';
     alert;
 }
 function feliz(){
