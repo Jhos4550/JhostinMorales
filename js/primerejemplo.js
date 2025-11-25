@@ -1,9 +1,9 @@
 function triste(){
-    document.getElementById('carita').src='images/sad.png';
+    document.getElementById('carita').src='images/trite.png';
     alert; poque tite ta tite la wawa
 }
 function feliz(){
-    document.getElementById('carita').src='images/happy.png';
+    document.getElementById('carita').src='imagenes/feliz.png';
 }
 function cambiarColor(){
     document.getElementById('menu').style.color='#c70909ff';
