@@ -1,6 +1,6 @@
 function triste(){
     document.getElementById('carita').src='imagenes/trite.png';
-    alert; poque tite el niño
+    alert; 
 }
 function feliz(){
     document.getElementById('carita').src='imagenes/feliz.png';
