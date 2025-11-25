@@ -6,7 +6,7 @@ function feliz(){
     document.getElementById('carita').src='images/feliz.png';
 }
 function cambiarColor(){
-    document.getElementById(menu).style.background='#8000b3ff';
+    document.getElementById('menu').style.background='#8000b3ff';
 }
 function cambiarLogo(){
     document.getElementById('logo').src='imagenes/logo2.png';
