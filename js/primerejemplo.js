@@ -7,7 +7,6 @@ function feliz(){
 }
 function cambiarColor(){
     document.getElementById('menu').style.color='#eed33aff';
-
 }
 function cambiarLogo(){
     document.getElementById('logo').src='imagenes/logo2.png';
