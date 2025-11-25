@@ -3,7 +3,7 @@ alert("Hola Mundo, esto es un alert")
 
 function triste(){
     document.getElementById('carita').src='imagenes/sad.png';
-    alert("Po que ta triste mano");
+    alert("Po que ta tite la wawa");
 }
 function feliz(){
     document.getElementById('carita').src='imagenes/happy.png';
