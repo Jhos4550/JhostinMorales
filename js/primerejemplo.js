@@ -16,7 +16,7 @@ function cambiarLogo(){
     document.getElementById('logo').src='images/logo2.jpg';
 }
 function cambiarFondo(){
-     document.getElementById('menu').style.background='#524604';
+     document.getElementById('menu').style.background='#970097ff';
 }
 function cambiodeTexto(){
     document.getElementById('Subtitulo').textContent="YA LE SE AL JS";
