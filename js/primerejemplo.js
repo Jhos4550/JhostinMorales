@@ -1,9 +1,9 @@
 function triste(){
-    document.getElementById('carita').src='images/sad.png';
+    document.getElementById('carita').src='images/trite.png';
     alert;
 }
 function feliz(){
-    document.getElementById('carita').src='images/happy.png';
+    document.getElementById('carita').src='images/feliz.png';
 }
 function cambiarColor(){
     document.getElementById('menu').style.color='#e100ffff';
