@@ -9,18 +9,21 @@ function feliz(){
     document.getElementById('carita').src='imagenes/feliz.png';
 }
 function cambiarColor(){
-    document.getElementById('menu').style.color='#eed33aff';
+    document,getElementById('menu').style.background='#0a7c00ff'
 
 }
 function cambiarLogo(){
-    document.getElementById('logo').src='imagenes/logo2.jpg';
+    document.getElementById('logo').src='imagenes/logo2.png';
 }
 function cambiarFondo(){
-     document.getElementById('menu').style.background='#524604';
+    document.getElementById('menu').style.background='#970097ff';
 }
 function cambiodeTexto(){
     document.getElementById('Subtitulo').textContent="No cambies p";
 }
 function fondoAside(){
-    document.getElementById('aside').style.background='#f584f5ff';
+    document.getElementById('aside').style.background='#5ebfffff';
+}
+function cambiarFondo2(){
+    document.getElementById('header').style.background='#100e8aff';
 }
