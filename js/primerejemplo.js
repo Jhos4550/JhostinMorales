@@ -24,3 +24,6 @@ function cambiodeTexto(){
 function fondoAside(){
     document.getElementById('aside').style.background='#5ebfffff';
 }
+function cambiarFondo2(){
+     document.getElementById('header').style.background='#b209eaff';
+}
