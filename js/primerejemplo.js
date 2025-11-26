@@ -24,3 +24,6 @@ function cambiodeTexto(){
 function fondoAside(){
     document.getElementById('aside').style.background='#00ffb3ff';
 }
+function avion(){
+    document.getElementById('avion').src'imagenes/avion.jpg';
+}
