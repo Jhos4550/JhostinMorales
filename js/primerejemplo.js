@@ -22,5 +22,5 @@ function cambiodeTexto(){
     document.getElementById('Subtitulo').textContent="No cambies p";
 }
 function fondoAside(){
-    document.getElementById('aside').style.background='#750075ff';
+    document.getElementById('aside').style.background='rgba(139, 7, 7, 1)'
 }
