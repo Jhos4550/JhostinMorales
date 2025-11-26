@@ -13,10 +13,10 @@ function cambiarColor(){
 
 }
 function cambiarLogo(){
-    document.getElementById('logo').src='imagenes/logo2.jpg';
+    document.getElementById('logo').src='imagenes/logo2.png';
 }
 function cambiarFondo(){
-     document.getElementById('menu').style.background='#524604';
+     document.getElementById('menu').style.background='#c2a502ff';
 }
 function cambiodeTexto(){
     document.getElementById('Subtitulo').textContent="No cambies p";
