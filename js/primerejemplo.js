@@ -9,11 +9,11 @@ function feliz(){
     document.getElementById('carita').src='imagenes/feliz.png';
 }
 function cambiarColor(){
-    document.getElementById('menu').style.color='#eed33aff';
+    document.getElementById('menu').style.color='#ff00bf54';
 
 }
 function cambiarLogo(){
-    document.getElementById('logo').src='images/logo2.jpg';
+    document.getElementById('logo').src='imagenes/logo2.jpg';
 }
 function cambiarFondo(){
      document.getElementById('menu').style.background='#970097ff';
