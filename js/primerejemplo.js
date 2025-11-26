@@ -16,11 +16,11 @@ function cambiarLogo(){
     document.getElementById('logo').src='imagenes/logo2.png';
 }
 function cambiarFondo(){
-     document.getElementById('menu').style.background='#970097ff';
+     document.getElementById('menu').style.background='#10d8fcff';
 }
 function cambiodeTexto(){
     document.getElementById('Subtitulo').textContent="YA LE SE AL JS";
 }
 function fondoAside(){
-    document.getElementById('aside').style.background='#750075ff';
+    document.getElementById('aside').style.background='#d61010ff';
 }
