@@ -13,7 +13,7 @@ function cambiarColor(){
 
 }
 function cambiarLogo(){
-    document.getElementById('logo').src='imagenes/logo2.jpg';
+    document.getElementById('logo').src='imagenes/logo2.png';
 }
 function cambiarFondo(){
      document.getElementById('menu').style.background='#970097ff';
