@@ -13,13 +13,14 @@ function cambiarColor(){
 
 }
 function cambiarLogo(){
-    document.getElementById('logo').src='images/logo2.jpg';
+    document.getElementById('logo').src='imagenes/logo2.jpg';
 }
 function cambiarFondo(){
      document.getElementById('menu').style.background='#524604';
 }
 function cambiodeTexto(){
-    document.getElementById('Subtitulo').textContent="YA LE SE AL JS";
+    document.getElementById('Subtitulo').textContent="No cambies p";
 }
 function fondoAside(){
     document.getElementById('aside').style.background='#f584f5ff';
+}
