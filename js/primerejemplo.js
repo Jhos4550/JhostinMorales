@@ -19,7 +19,7 @@ function cambiarFondo(){
      document.getElementById('menu').style.background='#524604';
 }
 function cambiodeTexto(){
-    document.getElementById('Subtitulo').textContent="dNo cambies p";
+    document.getElementById('Subtitulo').textContent="No cambies p";
 }
 function fondoAside(){
     document.getElementById('aside').style.background='#f584f5ff';
