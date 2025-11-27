@@ -3,7 +3,7 @@ alert("Hola Mundo, esto es un alert")
 
 function triste(){
     document.getElementById('carita').src='imagenes/trite.png';
-    alert("Po que ta trite mano");
+    alert("Po que ta trite la wawa");
 }
 function feliz(){
     document.getElementById('carita').src='imagenes/feliz.png';
@@ -22,5 +22,5 @@ function fondoAside(){
     document.getElementById('aside').style.background='#2fff5cff';
 }
 function cambiarFondo2(){
-    document.getElementById('header').style.background='#ff5151ff'
+    document.getElementById('header').style.background='#4b0091ff';
 }
