@@ -1,12 +1,13 @@
 console.log("Hola Mundo");
 alert("Hola Mundo, esto es un alert") 
 
-function gemela(){
-    document.getElementById('gemela').src='imagenes/gemela.jpg';
-}
 function avion(){
     document.getElementById('avion').src='imagenes/avion.jpg';
 }
+function gemela(){
+    document.getElementById('gemela').src='imagenes/gemela.jpg';
+}
+
 
 function cambiarLogo(){
     document.getElementById('logo').src='imagenes/logo2.png';
@@ -22,7 +23,4 @@ function fondoAside(){
 }
 function cambiarFondo(){
     document.getElementById('header').style.background='#4b0091ff';
-}
-function cambiarFondo(){
-    document.getElementById('header').src='imagenes/avion.jpg'
 }
