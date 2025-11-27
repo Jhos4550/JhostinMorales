@@ -2,11 +2,11 @@ console.log("Hola Mundo");
 alert("Hola Mundo, esto es un alert") 
 
 function triste(){
-    document.getElementById('carita').src='imagenes/trite.png';
+    document.getElementById('carita').src='imagenes/triste.png';
     alert("Po que ta trite la wawa");
 }
 function feliz(){
-    document.getElementById('carita').src='imagenes/feliz.png'
+    document.getElementById('carita').src='imagenes/feliz.png';
 }
 function cambiarColor(){
     document.getElementById('menu').style.color='#8d003bff';
