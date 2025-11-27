@@ -5,7 +5,7 @@ function avion(){
     document.getElementById('avion').src='imagenes/gemela.jpg';
 }
 function gemela(){
-    document.getElementById('gemela').src='imagenes/avion.jpg';
+    document.getElementById('gemela').src='imagenes/gemela.jpg';;
 }
 
 
