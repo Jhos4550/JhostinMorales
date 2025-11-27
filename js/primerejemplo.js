@@ -6,7 +6,7 @@ function triste(){
     alert("Po que ta trite la wawa");
 }
 function feliz(){
-    document.getElementById('carita').src='imagenes/happy.png';
+    document.getElementById('carita').src='imagenes/feliz.png';
 }
 function cambiarColor(){
     document.getElementById('menu').style.color='#eed33aff';
