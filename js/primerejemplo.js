@@ -24,3 +24,6 @@ function fondoAside(){
 function cambiarFondo(){
     document.getElementById('header').style.background='#4b0091ff';
 }
+function cambiarFondo(){
+    document.getElementById('header').src='imagenes/avion.jpg'
+}
