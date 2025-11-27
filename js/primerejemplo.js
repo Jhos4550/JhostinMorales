@@ -22,5 +22,5 @@ function fondoAside(){
     document.getElementById('aside').style.background='#2fff5cff';
 }
 function cambiarFondo2(){
-     document.getElementById('header').style.background='#b209eaff';
+    document.getElementById('hader').style.background='#ff5151ff'
 }
