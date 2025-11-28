@@ -1,24 +1,27 @@
 console.log("Hola Mundo");
 alert("Hola Mundo, esto es un alert") 
 
-function avion(){
-    document.getElementById('avion').src='imagenes/gemela.jpg';
+function triste(){
+    document.getElementById('carita').src='images/sad.png';
+    alert("Po que ta triste mano");
 }
-function gemela(){
-    document.getElementById('gemela').src='imagenes/gemela.jpg'
+function feliz(){
+    document.getElementById('carita').src='images/happy.png';
 }
+function cambiarColor(){
+    document.getElementById('menu').style.color='#eed33aff';
 
-
+}
 function cambiarLogo(){
-    document.getElementById('logo').src='imagenes/logo2.png';
+    document.getElementById('logo').src='images/logo2.jpg';
 }
 function cambiarFondo(){
-    document.getElementById('menu').style.background='#00e1ffff';
+     document.getElementById('menu').style.background='#524604';
 }
 function cambiodeTexto(){
-    document.getElementById('Subtitulo').textContent="No cambies p";
+    document.getElementById('Subtitulo').textContent="YA LE SE AL JS";
 }
 function fondoAside(){
-    document.getElementById('aside').style.background='#2fff5cff';
+    document.getElementById('aside').style.background='#f584f5ff';
 }
 
