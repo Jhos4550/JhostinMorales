@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+    min-height: 100vh;
+}
+
+header {
+    background-color: #8b4513;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+nav {
+    background-color: #a0522d;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1.1rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.hero {
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.hero h2 {
+    color: #8b4513;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.producto {
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+}
+
+.producto-icon {
+    font-size: 4rem;
+    margin-bottom: 15px;
+}
+
+.producto h3 {
+    color: #8b4513;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.producto p {
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.precio {
+    font-size: 1.5rem;
+    color: #d2691e;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.seccion-extra {
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+.seccion-extra h2 {
+    color: #8b4513;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+.seccion-extra p {
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: #8b4513;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+}
+
+footer h3 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.contacto p {
+    margin: 10px 0;
+    font-size: 1.05rem;
+}
