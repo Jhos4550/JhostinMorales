@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -45,12 +46,25 @@
             text-decoration: none;
             margin: 0 20px;
             font-size: 1.1rem;
+            cursor: pointer;
+        }
+        
+        nav a:hover {
+            color: #ffd700;
         }
         
         .container {
             max-width: 1200px;
             margin: 30px auto;
             padding: 0 20px;
+        }
+        
+        .seccion {
+            display: none;
+        }
+        
+        .seccion.activa {
+            display: block;
         }
         
         .hero {
@@ -130,6 +144,125 @@
             margin-bottom: 15px;
         }
         
+        .especialidades-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .especialidad {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+        }
+        
+        .especialidad h3 {
+            color: #8b4513;
+            font-size: 1.6rem;
+            margin-bottom: 15px;
+        }
+        
+        .especialidad ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .especialidad li {
+            color: #555;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+            line-height: 1.6;
+        }
+        
+        .especialidad li:last-child {
+            border-bottom: none;
+        }
+        
+        .formulario-contacto {
+            background-color: white;
+            border-radius: 15px;
+            padding: 40px;
+            max-width: 700px;
+            margin: 30px auto;
+        }
+        
+        .formulario-contacto h2 {
+            color: #8b4513;
+            font-size: 2rem;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .form-grupo {
+            margin-bottom: 20px;
+        }
+        
+        .form-grupo label {
+            display: block;
+            color: #8b4513;
+            font-weight: bold;
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+        }
+        
+        .form-grupo input,
+        .form-grupo textarea,
+        .form-grupo select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-family: Arial, sans-serif;
+        }
+        
+        .form-grupo textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        
+        .boton-enviar {
+            background-color: #8b4513;
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+        }
+        
+        .boton-enviar:hover {
+            background-color: #a0522d;
+        }
+        
+        .info-contacto {
+            background-color: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-top: 30px;
+        }
+        
+        .info-contacto h3 {
+            color: #8b4513;
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+        }
+        
+        .info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            color: #555;
+        }
+        
+        .info-item span {
+            font-size: 1.5rem;
+            margin-right: 15px;
+        }
+        
         footer {
             background-color: #8b4513;
             color: white;
@@ -156,87 +289,314 @@
     </header>
     
     <nav>
-        <a href="">Inicio</a>
-        <a href="">Productos</a>
-        <a href="">Especialidades</a>
-        <a href="">Contacto</a>
+        <a onclick="mostrarSeccion('inicio')">Inicio</a>
+        <a onclick="mostrarSeccion('productos')">Productos</a>
+        <a onclick="mostrarSeccion('especialidades')">Especialidades</a>
+        <a onclick="mostrarSeccion('contacto')">Contacto</a>
     </nav>
     
     <div class="container">
-        <div class="hero">
-            <h2>Bienvenidos a nuestra pastelería</h2>
-            <p>Elaboramos cada producto con amor y los mejores ingredientes. Nuestros pasteles y postres son perfectos para cualquier ocasión especial. Con más de 25 años de experiencia, nos especializamos en crear momentos dulces e inolvidables para nuestros clientes.</p>
-        </div>
-        
-        <h2 style="text-align: center; color: #8b4513; margin-bottom: 30px; font-size: 2rem;">Nuestros Productos</h2>
-        
-        <div class="productos">
-            <div class="producto">
-                <div class="producto-icon">🎂</div>
-                <h3>Tortas Personalizadas</h3>
-                <p>Diseños únicos y personalizados para cumpleaños, bodas, bautizos y eventos especiales. Trabajamos con masas de vainilla, chocolate, red velvet, zanahoria y limón. Rellenos de manjar blanco, crema pastelera, frutas frescas y mousse de chocolate. Tamaños de 20 hasta 100 porciones.</p>
-                <div class="precio">Desde S/ 80</div>
+        <div id="inicio" class="seccion activa">
+            <div class="hero">
+                <h2>Bienvenidos a nuestra pastelería</h2>
+                <p>Elaboramos cada producto con amor y los mejores ingredientes. Nuestros pasteles y postres son perfectos para cualquier ocasión especial. Con más de 25 años de experiencia, nos especializamos en crear momentos dulces e inolvidables para nuestros clientes.</p>
             </div>
             
-            <div class="producto">
-                <div class="producto-icon">🧁</div>
-                <h3>Cupcakes</h3>
-                <p>Deliciosos cupcakes individuales con variedad de sabores: chocolate, vainilla, red velvet, limón, coco y café. Decorados con buttercream, fondant o merengue italiano. Ideales para fiestas infantiles, eventos corporativos y obsequios especiales. Pedido mínimo de 6 unidades.</p>
-                <div class="precio">S/ 5 c/u</div>
+            <div class="seccion-extra">
+                <h2>¿Por qué elegirnos?</h2>
+                <p>Somos una pastelería familiar con tradición y calidad garantizada. Cada producto es elaborado artesanalmente el mismo día de su venta, utilizando ingredientes premium importados y locales. Nuestro equipo de pasteleros cuenta con certificaciones internacionales y años de experiencia en repostería fina.</p>
+                <p>Atendemos desde pedidos individuales hasta eventos corporativos de gran escala. Ofrecemos asesoría personalizada para diseñar el postre perfecto para tu celebración especial.</p>
             </div>
             
-            <div class="producto">
-                <div class="producto-icon">🍪</div>
-                <h3>Galletas Artesanales</h3>
-                <p>Galletas crujientes hechas con recetas tradicionales completamente artesanales. Sabores disponibles: chispas de chocolate, avena con pasas, mantequilla, naranja, coco y nuez. Preparadas sin conservantes artificiales. Perfectas para el té o como snack. Duración de 15 días en envase sellado.</p>
-                <div class="precio">S/ 20 docena</div>
-            </div>
-            
-            <div class="producto">
-                <div class="producto-icon">🥐</div>
-                <h3>Panadería Fresca</h3>
-                <p>Pan recién horneado dos veces al día a las 7 AM y 4 PM. Ofrecemos pan francés, ciabatta, pan integral, pan de molde, pan de yema, pan de ajo y panes especiales. Preparados con ingredientes naturales sin aditivos químicos para garantizar máxima frescura y sabor.</p>
-                <div class="precio">Desde S/ 2</div>
-            </div>
-            
-            <div class="producto">
-                <div class="producto-icon">🍰</div>
-                <h3>Tartas Especiales</h3>
-                <p>Amplia selección de tartas gourmet: cheesecake de frutos rojos, tres leches tradicional, selva negra con cerezas, torta de limón, tiramisu italiano, pavlova con frutas frescas y torta de chocolate belga. Disponibles por porción individual o tortas completas de 8 a 12 porciones.</p>
-                <div class="precio">S/ 35 porción</div>
-            </div>
-            
-            <div class="producto">
-                <div class="producto-icon">🍮</div>
-                <h3>Postres del Día</h3>
-                <p>Variedad de postres preparados diariamente: suspiro limeño, mazamorra morada, arroz con leche, crema volteada, gelatinas artísticas, mousse de maracuyá y pie de limón. Los postres cambian según la temporada y disponibilidad de ingredientes frescos de la región.</p>
-                <div class="precio">S/ 8 porción</div>
+            <div class="seccion-extra">
+                <h2>Horarios especiales</h2>
+                <p>📅 Lunes a Viernes: 8:00 AM - 8:00 PM</p>
+                <p>📅 Sábados y Domingos: 9:00 AM - 9:00 PM</p>
+                <p>📅 Días festivos: 10:00 AM - 6:00 PM</p>
+                <p>🚚 Delivery disponible de 9:00 AM a 7:00 PM</p>
             </div>
         </div>
         
-        <div class="seccion-extra">
-            <h2>Pedidos Especiales</h2>
-            <p>Realizamos pedidos especiales con 48 horas de anticipación mínima. Para eventos grandes ofrecemos descuentos por volumen y paquetes personalizados. Contamos con servicio de delivery dentro de la ciudad de Puno sin costo adicional para pedidos mayores a S/ 100. Aceptamos pagos en efectivo, Yape, Plin y tarjetas de crédito o débito.</p>
+        <div id="productos" class="seccion">
+            <div class="hero">
+                <h2>Nuestros Productos</h2>
+                <p>Descubre nuestra amplia variedad de productos artesanales preparados con dedicación y los mejores ingredientes.</p>
+            </div>
+            
+            <div class="productos">
+                <div class="producto">
+                    <div class="producto-icon">🎂</div>
+                    <h3>Tortas Personalizadas</h3>
+                    <p>Diseños únicos y personalizados para cumpleaños, bodas, bautizos y eventos especiales. Trabajamos con masas de vainilla, chocolate, red velvet, zanahoria y limón. Rellenos de manjar blanco, crema pastelera, frutas frescas y mousse de chocolate. Tamaños de 20 hasta 100 porciones.</p>
+                    <div class="precio">Desde S/ 80</div>
+                </div>
+                
+                <div class="producto">
+                    <div class="producto-icon">🧁</div>
+                    <h3>Cupcakes</h3>
+                    <p>Deliciosos cupcakes individuales con variedad de sabores: chocolate, vainilla, red velvet, limón, coco y café. Decorados con buttercream, fondant o merengue italiano. Ideales para fiestas infantiles, eventos corporativos y obsequios especiales. Pedido mínimo de 6 unidades.</p>
+                    <div class="precio">S/ 5 c/u</div>
+                </div>
+                
+                <div class="producto">
+                    <div class="producto-icon">🍪</div>
+                    <h3>Galletas Artesanales</h3>
+                    <p>Galletas crujientes hechas con recetas tradicionales completamente artesanales. Sabores disponibles: chispas de chocolate, avena con pasas, mantequilla, naranja, coco y nuez. Preparadas sin conservantes artificiales. Perfectas para el té o como snack. Duración de 15 días en envase sellado.</p>
+                    <div class="precio">S/ 20 docena</div>
+                </div>
+                
+                <div class="producto">
+                    <div class="producto-icon">🥐</div>
+                    <h3>Panadería Fresca</h3>
+                    <p>Pan recién horneado dos veces al día a las 7 AM y 4 PM. Ofrecemos pan francés, ciabatta, pan integral, pan de molde, pan de yema, pan de ajo y panes especiales. Preparados con ingredientes naturales sin aditivos químicos para garantizar máxima frescura y sabor.</p>
+                    <div class="precio">Desde S/ 2</div>
+                </div>
+                
+                <div class="producto">
+                    <div class="producto-icon">🍰</div>
+                    <h3>Tartas Especiales</h3>
+                    <p>Amplia selección de tartas gourmet: cheesecake de frutos rojos, tres leches tradicional, selva negra con cerezas, torta de limón, tiramisu italiano, pavlova con frutas frescas y torta de chocolate belga. Disponibles por porción individual o tortas completas de 8 a 12 porciones.</p>
+                    <div class="precio">S/ 35 porción</div>
+                </div>
+                
+                <div class="producto">
+                    <div class="producto-icon">🍮</div>
+                    <h3>Postres del Día</h3>
+                    <p>Variedad de postres preparados diariamente: suspiro limeño, mazamorra morada, arroz con leche, crema volteada, gelatinas artísticas, mousse de maracuyá y pie de limón. Los postres cambian según la temporada y disponibilidad de ingredientes frescos de la región.</p>
+                    <div class="precio">S/ 8 porción</div>
+                </div>
+            </div>
+            
+            <div class="seccion-extra">
+                <h2>Pedidos Especiales</h2>
+                <p>Realizamos pedidos especiales con 48 horas de anticipación mínima. Para eventos grandes ofrecemos descuentos por volumen y paquetes personalizados. Contamos con servicio de delivery dentro de la ciudad de Puno sin costo adicional para pedidos mayores a S/ 100. Aceptamos pagos en efectivo, Yape, Plin y tarjetas de crédito o débito.</p>
+            </div>
         </div>
         
-        <div class="seccion-extra">
-            <h2>Ingredientes de Calidad Premium</h2>
-            <p>Utilizamos únicamente ingredientes de primera calidad: mantequilla importada europea, chocolate belga auténtico, frutas frescas de temporada seleccionadas, harina premium y huevos orgánicos de granjas locales. No utilizamos conservantes artificiales ni grasas trans en ninguno de nuestros productos. Todos nuestros productos son preparados el mismo día de la venta para garantizar máxima frescura.</p>
+        <div id="especialidades" class="seccion">
+            <div class="hero">
+                <h2>Nuestras Especialidades</h2>
+                <p>Productos exclusivos que nos distinguen por su calidad excepcional y sabor inigualable.</p>
+            </div>
+            
+            <div class="especialidades-grid">
+                <div class="especialidad">
+                    <h3>🎨 Tortas Temáticas</h3>
+                    <ul>
+                        <li><strong>Tortas de Superhéroes:</strong> Diseños 3D de personajes Marvel, DC Comics y más. Incluye figuras modeladas en fondant y decoraciones comestibles impresas.</li>
+                        <li><strong>Tortas de Princesas:</strong> Castillos de ensueño con torres comestibles, purpurina alimentaria y colores pastel. Perfectas para quinceañeros y cumpleaños infantiles.</li>
+                        <li><strong>Tortas Empresariales:</strong> Logos corporativos en alta definición, diseños minimalistas y elegantes para eventos de negocios.</li>
+                        <li><strong>Tortas Geek:</strong> Videojuegos, anime, series y películas. Personajes en 2D y 3D con todo lujo de detalles.</li>
+                    </ul>
+                </div>
+                
+                <div class="especialidad">
+                    <h3>💍 Repostería para Bodas</h3>
+                    <ul>
+                        <li><strong>Tortas de Varios Pisos:</strong> Desde 2 hasta 7 pisos con estructuras profesionales. Capacidad de 50 a 300 porciones.</li>
+                        <li><strong>Decoración con Flores Naturales:</strong> Rosas, orquídeas, lirios y flores de temporada comestibles y decorativas.</li>
+                        <li><strong>Mesa de Postres:</strong> Buffet completo con minitartas, macarons, cake pops, cupcakes y galletas decoradas con el tema de la boda.</li>
+                        <li><strong>Degustación Previa:</strong> Sesión de prueba de sabores y diseños sin costo adicional para los novios.</li>
+                    </ul>
+                </div>
+                
+                <div class="especialidad">
+                    <h3>🍫 Chocolatería Fina</h3>
+                    <ul>
+                        <li><strong>Bombones Artesanales:</strong> Rellenos de ganache, caramelo, frutas y licores premium. Presentación en cajas personalizadas.</li>
+                        <li><strong>Trufas de Chocolate:</strong> Chocolate belga 70% cacao con cobertura de cacao en polvo, coco rallado o frutos secos.</li>
+                        <li><strong>Tabletas Personalizadas:</strong> Chocolate con tu mensaje o diseño. Ideal para regalos corporativos y eventos especiales.</li>
+                        <li><strong>Fondue de Chocolate:</strong> Servicio de fondue para eventos con frutas frescas, malvaviscos y brownies.</li>
+                    </ul>
+                </div>
+                
+                <div class="especialidad">
+                    <h3>🥖 Panadería Europea</h3>
+                    <ul>
+                        <li><strong>Croissants Franceses:</strong> Masa hojaldrada con 27 capas de mantequilla. Sabores: natural, chocolate, almendra y jamón-queso.</li>
+                        <li><strong>Baguettes Tradicionales:</strong> Pan francés auténtico con corteza crujiente y miga alveolada. Horneado dos veces al día.</li>
+                        <li><strong>Pan de Centeno:</strong> Receta alemana con semillas de girasol, linaza y ajonjolí. Alto contenido de fibra.</li>
+                        <li><strong>Focaccia Italiana:</strong> Con aceite de oliva extra virgen, romero fresco y sal marina. Disponible con tomates cherry y aceitunas.</li>
+                    </ul>
+                </div>
+                
+                <div class="especialidad">
+                    <h3>🍰 Postres Sin Azúcar</h3>
+                    <ul>
+                        <li><strong>Tortas Aptas para Diabéticos:</strong> Endulzadas con stevia y eritritol. Sabores: zanahoria, chocolate amargo y limón.</li>
+                        <li><strong>Cheesecake Sin Azúcar:</strong> Base de almendra, relleno cremoso con edulcorantes naturales y frutas frescas.</li>
+                        <li><strong>Galletas Integrales:</strong> Harina integral, avena y endulzadas con miel de agave. Sin azúcar refinada.</li>
+                        <li><strong>Mousse Light:</strong> Chocolate 85% cacao, mousse de maracuyá y limón con stevia orgánica.</li>
+                    </ul>
+                </div>
+                
+                <div class="especialidad">
+                    <h3>🌱 Opciones Veganas</h3>
+                    <ul>
+                        <li><strong>Tortas Veganas:</strong> Sin productos de origen animal. Leche de almendra, harina de arroz y aceite de coco. Sabores: chocolate, vainilla y red velvet.</li>
+                        <li><strong>Cupcakes Plant-Based:</strong> Con frosting de mantequilla vegana y decoraciones naturales.</li>
+                        <li><strong>Galletas Sin Gluten:</strong> Harina de almendra y coco. Ideales para celíacos y veganos.</li>
+                        <li><strong>Brownies de Frijol Negro:</strong> Receta sorprendente, húmedos y deliciosos, 100% veganos.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="seccion-extra">
+                <h2>Ingredientes Premium</h2>
+                <p>Utilizamos únicamente ingredientes de primera calidad: mantequilla importada europea, chocolate belga Callebaut auténtico, vainilla de Madagascar, frutas frescas de temporada seleccionadas directamente de productores locales, harina premium italiana y huevos orgánicos de granjas certificadas de la región.</p>
+                <p>No utilizamos conservantes artificiales, colorantes sintéticos ni grasas trans en ninguno de nuestros productos. Todos nuestros productos son preparados el mismo día de la venta para garantizar máxima frescura y sabor.</p>
+            </div>
+        </div>
+        
+        <div id="contacto" class="seccion">
+            <div class="formulario-contacto">
+                <h2>Contáctanos</h2>
+                <form id="formContacto">
+                    <div class="form-grupo">
+                        <label for="nombre">Nombre Completo *</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    
+                    <div class="form-grupo">
+                        <label for="email">Correo Electrónico *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-grupo">
+                        <label for="telefono">Teléfono / WhatsApp *</label>
+                        <input type="tel" id="telefono" name="telefono" required>
+                    </div>
+                    
+                    <div class="form-grupo">
+                        <label for="motivo">Motivo de Consulta *</label>
+                        <select id="motivo" name="motivo" required>
+                            <option value="">Seleccione una opción</option>
+                            <option value="pedido">Realizar un pedido</option>
+                            <option value="cotizacion">Solicitar cotización</option>
+                            <option value="evento">Consulta para evento</option>
+                            <option value="boda">Repostería para boda</option>
+                            <option value="corporativo">Pedido corporativo</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-grupo">
+                        <label for="mensaje">Mensaje *</label>
+                        <textarea id="mensaje" name="mensaje" required placeholder="Cuéntanos sobre tu pedido o consulta..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="boton-enviar">Enviar Mensaje</button>
+                </form>
+            </div>
+            
+            <div class="info-contacto">
+                <h3>Información de Contacto</h3>
+                <div class="info-item">
+                    <span>📍</span>
+                    <div>
+                        <strong>Dirección:</strong><br>
+                        Jr. Lima 123, Centro de Puno, Puno, Perú<br>
+                        (A dos cuadras de la Plaza de Armas)
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <span>📞</span>
+                    <div>
+                        <strong>Teléfono:</strong><br>
+                        (051) 123-4567
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <span>📱</span>
+                    <div>
+                        <strong>Celular / WhatsApp:</strong><br>
+                        +51 987 654 321
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <span>📧</span>
+                    <div>
+                        <strong>Email:</strong><br>
+                        info@dulcehogar.pe<br>
+                        pedidos@dulcehogar.pe
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <span>⏰</span>
+                    <div>
+                        <strong>Horario de Atención:</strong><br>
+                        Lunes a Viernes: 8:00 AM - 8:00 PM<br>
+                        Sábados y Domingos: 9:00 AM - 9:00 PM
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <span>📱</span>
+                    <div>
+                        <strong>Redes Sociales:</strong><br>
+                        Facebook: @PasteleriaDulceHogar<br>
+                        Instagram: @PasteleriaDulceHogar<br>
+                        TikTok: @dulcehogarpuno
+                    </div>
+                </div>
+            </div>
+            
+            <div class="seccion-extra">
+                <h2>🚚 Servicio de Delivery</h2>
+                <p><strong>Cobertura:</strong> Realizamos entregas en toda la ciudad de Puno y zonas aledañas.</p>
+                <p><strong>Horario de delivery:</strong> 9:00 AM - 7:00 PM de lunes a domingo.</p>
+                <p><strong>Costo:</strong> Envío gratis para pedidos mayores a S/ 100. Para pedidos menores, el costo es de S/ 5 dentro del centro de la ciudad y S/ 10 para zonas alejadas.</p>
+                <p><strong>Tiempo de entrega:</strong> 45 minutos a 2 horas dependiendo de la zona.</p>
+                <p><strong>Pedidos especiales:</strong> Tortas personalizadas requieren mínimo 48 horas de anticipación.</p>
+            </div>
         </div>
     </div>
     
     <footer>
-        <h3>Contáctanos</h3>
+        <h3>Pastelería Dulce Hogar</h3>
         <div class="contacto">
-            <p>📍 Dirección: Jr. Lima 123, Centro de Puno, Puno, Perú</p>
-            <p>📞 Teléfono: (051) 123-4567</p>
-            <p>📱 Celular y WhatsApp: 987 654 321</p>
-            <p>📧 Email: info@dulcehogar.pe</p>
-            <p>⏰ Horario: Lunes a Domingo de 8:00 AM a 8:00 PM</p>
-            <p>📱 Síguenos en Facebook e Instagram: @PasteleriaDulceHogar</p>
+            <p>Jr. Lima 123, Centro de Puno, Puno, Perú</p>
+            <p>Teléfono: (051) 123-4567 | WhatsApp: 987 654 321</p>
+            <p>Email: info@dulcehogar.pe</p>
         </div>
         <p style="margin-top: 20px;">© 2024 Pastelería Dulce Hogar - Todos los derechos reservados</p>
     </footer>
+    
+    <script>
+        function mostrarSeccion(seccionId) {
+            const secciones = document.querySelectorAll('.seccion');
+            secciones.forEach(seccion => {
+                seccion.classList.remove('activa');
+            });
+            
+            document.getElementById(seccionId).classList.add('activa');
+            
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+        
+        document.getElementById('formContacto').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const nombre = document.getElementById('nombre').value;
+            const email = document.getElementById('email').value;
+            const telefono = document.getElementById('telefono').value;
+            const motivo = document.getElementById('motivo').value;
+            const mensaje = document.getElementById('mensaje').value;
+            
+            alert('¡Gracias por contactarnos, ' + nombre + '!\n\nHemos recibido tu mensaje y te responderemos pronto a ' + email + ' o al ' + telefono + '.\n\nMotivo: ' + motivo);
+            
+            this.reset();
+        });
+        
+        console.log('Pastelería Dulce Hogar cargada correctamente');
+    </script>
 </body>
 
 </html>
