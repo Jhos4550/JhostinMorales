@@ -1,12 +1,12 @@
 console.log("Hola Mundo");
 alert("Hola Mundo, esto es un alert") 
 
-function avion(){
-    document.getElementById('avion').src='imagenes/gemela.jpg';
+function gemela(){
+    document.getElementById('gemela').src='imagenes/gemela.jpg';
 }
 
 function gemela(){
-    document.getElementById('gemela').src='imagenes/gemela.jpg'
+    document.getElementById('avion').src='imagenes/avion.jpg'
 }
 
 function cambiarLogo(){
