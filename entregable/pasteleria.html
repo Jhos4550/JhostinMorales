@@ -2,111 +2,243 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="Dulce Sabor - Pasteleria artesanal y deliciosa" />
-    <title>Dulce Sabor - Inicio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="styles.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastelería Dulce Encanto</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: #d2691e;
+            color: white;
+            padding: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        logo-img {
+            width: 120px;
+            height: 120px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3.5rem;
+        }
+
+        titulo {
+            text-align: left;
+            display: block;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        seleccion {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        seleccion select {
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        nav {
+            background: #ff1493;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 3rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        tarjeta-pastel {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            display: block;
+        }
+
+        tarjeta-pastel img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        info-pastel {
+            padding: 1.5rem;
+            display: block;
+        }
+
+        info-pastel h3 {
+            color: #d2691e;
+            margin-bottom: 0.5rem;
+        }
+
+        info-pastel p {
+            color: #666;
+        }
+
+        h2 {
+            color: #ff1493;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+        }
+
+        footer {
+            background: #ff1493;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+    </style>
 </head>
 <body>
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center textrosa" href="index.html">
-                <i class="bi-cake2-fill me-2" style="font-size: 2rem;"></i>
-                <div>
-                    <div class="logotext">Dulce Sabor</div>
-                    <div style="font-size: 0.7rem; margin-top: -5px;">"Pasteleria artesanal con amor"</div>
-                </div>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav me-3">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Acerca de</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-                </ul>
-                <button class="btn btnrosa" id="btnCarrito">
-                    <i class="bi-cart3 me-1"></i> Carrito
-                </button>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Header-->
-    <header class="headersection">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-8">
-                    <h1 class="display-3 fw-bold mb-3">Dulce Sabor</h1>
-                    <p class="lead mb-4" style="font-size: 1.5rem;">"Pasteleria artesanal con amor"</p>
-                    <p class="mb-4">Los mejores pasteles hechos con ingredientes frescos y de primera calidad</p>
-                    <a href="productos.html" class="btn btnrosa btn-lg">Ver Pasteles</a>
-                </div>
-                <div class="col-lg-4 text-center">
-                    <i class="bi-cake2-fill" style="font-size: 8rem; opacity: 0.9;"></i>
-                </div>
-            </div>
-        </div>
+    <header>
+        <logo>
+            <logo-img>🎂</logo-img>
+            <titulo>
+                <h1>Pastelería Dulce Encanto</h1>
+                <p>Los mejores pasteles artesanales de la ciudad</p>
+            </titulo>
+        </logo>
+        <seleccion>
+            <select>
+                <option>Español</option>
+                <option>English</option>
+                <option>Português</option>
+            </select>
+            <select>
+                <option>Mi Cuenta</option>
+                <option>Iniciar Sesión</option>
+                <option>Registrarse</option>
+                <option>Mis Pedidos</option>
+                <option>Contacto</option>
+                <option>Libro de Reclamaciones</option>
+            </select>
+        </seleccion>
     </header>
 
-    <!-- Seccion Bienvenida -->
-    <section class="py-5 sectionbg">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="fw-bold textrosa mb-4">Bienvenidos a Nuestra Pasteleria</h2>
-                <p class="lead">Desde 2020 elaboramos los pasteles mas deliciosos con ingredientes frescos y de primera calidad. Cada pastel es hecho con amor y dedicacion para endulzar tus momentos especiales.</p>
-            </div>
-        </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="reclamaciones.html">Libro de Reclamaciones</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Bienvenidos</h2>
+        <p>En Pastelería Dulce Encanto creamos los pasteles más deliciosos con ingredientes frescos y recetas tradicionales. Cada pastel es elaborado con amor y dedicación para hacer de tus momentos especiales algo inolvidable.</p>
+        
+        <galeria>
+            <tarjeta-pastel>
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500&q=80" alt="Pastel de Chocolate">
+                <info-pastel>
+                    <h3>Pastel de Chocolate</h3>
+                    <p>Delicioso pastel de chocolate con relleno de trufa</p>
+                </info-pastel>
+            </tarjeta-pastel>
+            
+            <tarjeta-pastel>
+                <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=500&q=80" alt="Pastel de Fresa">
+                <info-pastel>
+                    <h3>Pastel de Fresa</h3>
+                    <p>Suave bizcocho con crema y fresas frescas</p>
+                </info-pastel>
+            </tarjeta-pastel>
+            
+            <tarjeta-pastel>
+                <img src="https://images.unsplash.com/photo-1588195538326-c5b1e5b80d0b?w=500&q=80" alt="Pastel de Vainilla">
+                <info-pastel>
+                    <h3>Pastel de Vainilla</h3>
+                    <p>Clásico pastel de vainilla con betún de mantequilla</p>
+                </info-pastel>
+            </tarjeta-pastel>
+            
+            <tarjeta-pastel>
+                <img src="https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?w=500&q=80" alt="Pastel Red Velvet">
+                <info-pastel>
+                    <h3>Pastel Red Velvet</h3>
+                    <p>Exquisito pastel terciopelo rojo con frosting</p>
+                </info-pastel>
+            </tarjeta-pastel>
+            
+            <tarjeta-pastel>
+                <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=500&q=80" alt="Pastel de Zanahoria">
+                <info-pastel>
+                    <h3>Pastel de Zanahoria</h3>
+                    <p>Pastel húmedo de zanahoria con queso crema</p>
+                </info-pastel>
+            </tarjeta-pastel>
+            
+            <tarjeta-pastel>
+                <img src="https://images.unsplash.com/photo-1535141192574-5d4897c12636?w=500&q=80" alt="Pastel de Frutas">
+                <info-pastel>
+                    <h3>Pastel de Frutas</h3>
+                    <p>Delicioso pastel decorado con frutas frescas</p>
+                </info-pastel>
+            </tarjeta-pastel>
+        </galeria>
     </section>
 
-    <!-- Footer -->
-    <footer class="footersection">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <h5 class="mb-3">Enlaces Utiles</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="index.html">Inicio</a></li>
-                        <li class="mb-2"><a href="productos.html">Productos</a></li>
-                        <li class="mb-2"><a href="nosotros.html">Nosotros</a></li>
-                        <li class="mb-2"><a href="contacto.html">Contacto</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <h5 class="mb-3">Informacion</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#">Politicas de Privacidad</a></li>
-                        <li class="mb-2"><a href="#">Terminos y Condiciones</a></li>
-                        <li class="mb-2"><a href="#">Preguntas Frecuentes</a></li>
-                        <li class="mb-2"><a href="#">Metodos de Pago</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4 mb-4 text-center">
-                    <h5 class="mb-3">Siguenos</h5>
-                    <i class="bi-cake2-fill" style="font-size: 4rem;"></i>
-                    <p class="mt-3 small">Redes Sociales</p>
-                    <div class="fs-3">
-                        <a href="#" class="text-white me-3"><i class="bi-facebook"></i></a>
-                        <a href="#" class="text-white me-3"><i class="bi-instagram"></i></a>
-                        <a href="#" class="text-white me-3"><i class="bi-whatsapp"></i></a>
-                        <a href="#" class="text-white"><i class="bi-twitter"></i></a>
-                    </div>
-                </div>
-            </div>
-            <hr class="my-4 bg-light opacity-25" />
-            <div class="text-center">
-                <p class="mb-0">&copy; Copyright Pasteleria Dulce Sabor 2024 - Todos los derechos reservados</p>
-            </div>
-        </div>
+    <footer>
+        <p>&copy; 2024 Pastelería Dulce Encanto</p>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
 </body>
 </html>
