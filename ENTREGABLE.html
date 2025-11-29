@@ -1,298 +1,51 @@
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pastelería Dulce Hogar</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: Georgia, serif;
-            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
-            min-height: 100vh;
-        }
-        
-        header {
-            background-color: #8b4513;
-            color: white;
-            text-align: center;
-            padding: 30px;
-        }
-        
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-        
-        header p {
-            font-size: 1.1rem;
-            font-style: italic;
-        }
-        
-        nav {
-            background-color: #a0522d;
-            padding: 15px;
-            text-align: center;
-        }
-        
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 20px;
-            font-size: 1.1rem;
-            cursor: pointer;
-        }
-        
-        nav a:hover {
-            color: #ffd700;
-        }
-
-        container {
-            max-width: 1200px;
-            margin: 30px auto;
-            padding: 0 20px;
-        }
-        
-        seccion {
-            display: none;
-        }
-        
-        seccion.activa {
-            display: block;
-        }
-        
-        hero {
-            background-color: white;
-            border-radius: 15px;
-            padding: 30px;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        hero h2 {
-            color: #8b4513;
-            font-size: 2rem;
-            margin-bottom: 15px;
-        }
-        
-        hero p {
-            font-size: 1.1rem;
-            line-height: 1.6;
-            color: #555;
-        }
-        
-        productos {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 25px;
-            margin-top: 30px;
-        }
-        
-        producto {
-            background-color: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        
-        producto-imagen {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-        }
-        
-        producto-contenido {
-            padding: 25px;
-            text-align: center;
-        }
-        
-        producto h3 {
-            color: #8b4513;
-            margin-bottom: 10px;
-            font-size: 1.5rem;
-        }
-        
-        producto p {
-            color: #666;
-            margin-bottom: 15px;
-            line-height: 1.6;
-        }
-        
-        precio {
-            font-size: 1.5rem;
-            color: #d2691e;
-            font-weight: bold;
-            margin-top: 10px;
-        }
-        
-        seccion-extra {
-            background-color: white;
-            border-radius: 15px;
-            padding: 30px;
-            margin-top: 30px;
-        }
-        
-        seccion-extra h2 {
-            color: #8b4513;
-            margin-bottom: 15px;
-            font-size: 1.8rem;
-        }
-        
-        seccion-extra p {
-            color: #555;
-            line-height: 1.8;
-            margin-bottom: 15px;
-        }
-
-        especialidades-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 25px;
-            margin-top: 30px;
-        }
-        
-        especialidad {
-            background-color: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        
-        especialidad-imagen {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-        
-        especialidad-contenido {
-            padding: 25px;
-        }
-        
-        especialidad h3 {
-            color: #8b4513;
-            font-size: 1.6rem;
-            margin-bottom: 15px;
-        }
-        
-        especialidad ul {
-            list-style: none;
-            padding: 0;
-        }
-        
-        especialidad li {
-            color: #555;
-            padding: 10px 0;
-            border-bottom: 1px solid #eee;
-            line-height: 1.6;
-        }
-        
-        especialidad li:last-child {
-            border-bottom: none;
-        }
-
-        formulario-contacto {
-            background-color: white;
-            border-radius: 15px;
-            padding: 40px;
-            max-width: 700px;
-            margin: 30px auto;
-        }
-        
-        formulario-contacto h2 {
-            color: #8b4513;
-            font-size: 2rem;
-            margin-bottom: 30px;
-            text-align: center;
-        }
-        
-        form-grupo {
-            margin-bottom: 20px;
-        }
-        
-        form-grupo label {
-            display: block;
-            color: #8b4513;
-            font-weight: bold;
-            margin-bottom: 8px;
-            font-size: 1.1rem;
-        }
-        
-        form-grupo input,
-        form-grupo textarea,
-        form-grupo select {
-            width: 100%;
-            padding: 12px;
-            border: 2px solid #ddd;
-            border-radius: 8px;
-            font-size: 1rem;
-            font-family: Arial, sans-serif;
-        }
-        
-        form-grupo textarea {
-            resize: vertical;
-            min-height: 120px;
-        }
-        
-        boton-enviar {
-            background-color: #8b4513;
-            color: white;
-            padding: 15px 40px;
-            border: none;
-            border-radius: 8px;
-            font-size: 1.2rem;
-            cursor: pointer;
-            width: 100%;
-            margin-top: 10px;
-        }
-        
-        boton-enviar:hover {
-            background-color: #a0522d;
-        }
-
-        info-contacto {
-            background-color: white;
-            border-radius: 15px;
-            padding: 30px;
-            margin-top: 30px;
-        }
-        
-        info-contacto h3 {
-            color: #8b4513;
-            font-size: 1.6rem;
-            margin-bottom: 20px;
-        }
-
-        info-item {
-            display: flex;
-            align-items: center;
-            margin-bottom: 15px;
-            color: #555;
-        }
-
-        banner-inicio {
-            width: 100%;
-            height: 400px;
-            object-fit: cover;
-            border-radius: 15px;
-            margin-bottom: 30px;
-        }
-        
-        footer {
-            background-color: #8b4513;
-            color: white;
-            text-align: center;
-            padding: 30px;
-            margin-top: 40px;
-        }
-    </style>
-</head>
-<body>
-<!-- HTML SIN MODIFICAR, SOLO SE QUITÓ EL PUNTO EN CSS -->
-</body>
-</html>
+body{
+      margin0
+      fontfamilyArial
+      backgroundfff6ec
+      color6b3f2f
+    }
+    header{
+      padding10px
+      backgroundf7c6d0
+      textaligncenter
+      fontsize20px
+      fontweightbold
+    }
+    hero{
+      padding20px
+      backgroundffe4e4
+      textaligncenter
+      displayblock
+    }
+    boton{
+      padding8px 14px
+      background6b3f2f
+      colorwhite
+      textdecorationnone
+      border radius6px
+      displayinlineblock
+    }
+    productos{
+      padding20px
+      displayblock
+    }
+    item{
+      backgroundwhite
+      padding10px
+      bordere5d4d0 solid 1px
+      marginbottom10px
+      borderradius6px
+      displayblock
+    }
+    contacto{
+      padding20px
+      backgroundffe4e4
+      displayblock
+    }
+    input textarea{
+      width100percent
+      marginbottom8px
+      padding8px
+      border1px solid d9c9c9
+      borderradius4px
+    }
