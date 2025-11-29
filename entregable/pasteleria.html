@@ -5,10 +5,148 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pastelería Dulce Encanto</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: #d2691e;
+            color: white;
+            padding: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        logo-img {
+            width: 120px;
+            height: 120px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3.5rem;
+        }
+
+        titulo {
+            text-align: left;
+            display: block;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        seleccion {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        seleccion select {
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        nav {
+            background: #ff1493;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 3rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        tarjeta-pastel {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            display: block;
+        }
+
+        tarjeta-pastel img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        info-pastel {
+            padding: 1.5rem;
+            display: block;
+        }
+
+        info-pastel h3 {
+            color: #d2691e;
+            margin-bottom: 0.5rem;
+        }
+
+        info-pastel p {
+            color: #666;
+        }
+
+        h2 {
+            color: #ff1493;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+        }
+
+        footer {
+            background: #ff1493;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+    </style>
 </head>
 <body>
-    <!-- Todo el contenido del body permanece igual -->
     <header>
         <logo>
             <logo-img>🎂</logo-img>
@@ -34,8 +172,73 @@
         </seleccion>
     </header>
 
-    <!-- ... resto del contenido ... -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="reclamaciones.html">Libro de Reclamaciones</a></li>
+        </ul>
+    </nav>
 
-    <script src="script.js"></script>
+    <section>
+        <h2>Bienvenidos</h2>
+        <p>En Pastelería Dulce Encanto creamos los pasteles más deliciosos con ingredientes frescos y recetas tradicionales. Cada pastel es elaborado con amor y dedicación para hacer de tus momentos especiales algo inolvidable.</p>
+        
+        <galeria>
+            <tarjeta-pastel>
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500&q=80" alt="Pastel de Chocolate">
+                <info-pastel>
+                    <h3>Pastel de Chocolate</h3>
+                    <p>Delicioso pastel de chocolate con relleno de trufa</p>
+                </info-pastel>
+            </tarjeta-pastel>
+            
+            <tarjeta-pastel>
+                <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=500&q=80" alt="Pastel de Fresa">
+                <info-pastel>
+                    <h3>Pastel de Fresa</h3>
+                    <p>Suave bizcocho con crema y fresas frescas</p>
+                </info-pastel>
+            </tarjeta-pastel>
+            
+            <tarjeta-pastel>
+                <img src="https://images.unsplash.com/photo-1588195538326-c5b1e5b80d0b?w=500&q=80" alt="Pastel de Vainilla">
+                <info-pastel>
+                    <h3>Pastel de Vainilla</h3>
+                    <p>Clásico pastel de vainilla con betún de mantequilla</p>
+                </info-pastel>
+            </tarjeta-pastel>
+            
+            <tarjeta-pastel>
+                <img src="https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?w=500&q=80" alt="Pastel Red Velvet">
+                <info-pastel>
+                    <h3>Pastel Red Velvet</h3>
+                    <p>Exquisito pastel terciopelo rojo con frosting</p>
+                </info-pastel>
+            </tarjeta-pastel>
+            
+            <tarjeta-pastel>
+                <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=500&q=80" alt="Pastel de Zanahoria">
+                <info-pastel>
+                    <h3>Pastel de Zanahoria</h3>
+                    <p>Pastel húmedo de zanahoria con queso crema</p>
+                </info-pastel>
+            </tarjeta-pastel>
+            
+            <tarjeta-pastel>
+                <img src="https://images.unsplash.com/photo-1535141192574-5d4897c12636?w=500&q=80" alt="Pastel de Frutas">
+                <info-pastel>
+                    <h3>Pastel de Frutas</h3>
+                    <p>Delicioso pastel decorado con frutas frescas</p>
+                </info-pastel>
+            </tarjeta-pastel>
+        </galeria>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Pastelería Dulce Encanto</p>
+    </footer>
 </body>
 </html>
