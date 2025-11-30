@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pastelería Dulce Encanto</title>
+    <title>Sweet Dreams Bakery - Pastelería Artesanal</title>
     <style>
         * {
             margin: 0;
@@ -12,65 +12,64 @@
             box-sizing: border-box;
         }
 
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-        }
-
-        header {
-            background: #d2691e;
-            color: white;
-            padding: 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        logo {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        logo-img {
-            width: 120px;
-            height: 120px;
-            background: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 3.5rem;
-        }
-
-        titulo {
-            text-align: left;
+        /* Definir elementos personalizados como block o inline */
+        logo, tagline, hero, container, section-title, products-grid, 
+        product-card, product-info, product-name, product-description, 
+        product-price, testimonials, testimonial-card, stars, contact-info,
+        modal, modal-content, close-modal, cart-icon, cart-count, 
+        cta-button, add-to-cart {
             display: block;
         }
 
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
+        cart-count, close-modal, stars {
+            display: inline-block;
         }
 
-        seleccion {
-            display: flex;
-            gap: 1rem;
-            align-items: center;
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #ffeef8 0%, #fff5e6 100%);
+            color: #333;
+            overflow-x: hidden;
         }
 
-        seleccion select {
-            padding: 0.5rem 1rem;
-            border: none;
-            border-radius: 5px;
-            font-size: 1rem;
-            cursor: pointer;
+        header {
+            background: linear-gradient(135deg, #ff6b9d 0%, #c44569 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        logo {
+            font-size: 4rem;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin: 1rem 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        tagline {
+            font-size: 1.2rem;
+            font-style: italic;
+            opacity: 0.9;
         }
 
         nav {
-            background: #ff1493;
+            background: #c44569;
             padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
 
         nav ul {
@@ -78,167 +77,512 @@
             display: flex;
             justify-content: center;
             gap: 2rem;
+            flex-wrap: wrap;
         }
 
         nav a {
             color: white;
             text-decoration: none;
             font-weight: bold;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            transition: all 0.3s ease;
         }
 
         nav a:hover {
-            text-decoration: underline;
+            background: white;
+            color: #c44569;
+            transform: scale(1.1);
         }
 
-        section {
+        hero {
+            text-align: center;
             padding: 3rem 2rem;
+            background: white;
+            margin: 2rem auto;
             max-width: 1200px;
-            margin: 0 auto;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
         }
 
-        galeria {
+        hero h2 {
+            color: #c44569;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        cta-button {
+            background: linear-gradient(135deg, #ff6b9d 0%, #c44569 100%);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            margin-top: 1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(196, 69, 105, 0.3);
+        }
+
+        cta-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(196, 69, 105, 0.5);
+        }
+
+        container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        section-title {
+            text-align: center;
+            color: #c44569;
+            font-size: 2.5rem;
+            margin: 3rem 0 2rem;
+            position: relative;
+        }
+
+        section-title::after {
+            content: '🧁';
+            display: block;
+            font-size: 2rem;
+            margin-top: 0.5rem;
+        }
+
+        products-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2rem;
             margin-top: 2rem;
         }
 
-        tarjeta-pastel {
+        product-card {
             background: white;
-            border-radius: 10px;
+            border-radius: 20px;
             overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            display: block;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
         }
 
-        tarjeta-pastel img {
+        product-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+        }
+
+        product-image, .product-image {
             width: 100%;
             height: 250px;
             object-fit: cover;
-        }
-
-        info-pastel {
-            padding: 1.5rem;
+            transition: transform 0.3s ease;
             display: block;
         }
 
-        info-pastel h3 {
-            color: #d2691e;
+        product-card:hover product-image,
+        product-card:hover .product-image {
+            transform: scale(1.1);
+        }
+
+        product-info {
+            padding: 1.5rem;
+        }
+
+        product-name {
+            color: #c44569;
+            font-size: 1.5rem;
             margin-bottom: 0.5rem;
         }
 
-        info-pastel p {
+        product-description {
             color: #666;
+            margin-bottom: 1rem;
         }
 
-        h2 {
-            color: #ff1493;
-            margin-bottom: 1.5rem;
+        product-price {
+            font-size: 1.3rem;
+            color: #ff6b9d;
+            font-weight: bold;
+        }
+
+        add-to-cart {
+            background: #ff6b9d;
+            color: white;
+            border: none;
+            padding: 0.7rem 1.5rem;
+            border-radius: 20px;
+            cursor: pointer;
+            margin-top: 1rem;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+
+        add-to-cart:hover {
+            background: #c44569;
+            transform: scale(1.05);
+        }
+
+        cart-icon {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: white;
+            padding: 1rem;
+            border-radius: 50%;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+            cursor: pointer;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        cart-icon:hover {
+            transform: scale(1.1);
+        }
+
+        cart-count {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background: #ff6b9d;
+            color: white;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.7);
+            z-index: 2000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        modal-content {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            max-width: 500px;
+            width: 90%;
+            position: relative;
+            animation: slideIn 0.3s ease;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        close-modal {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
             font-size: 2rem;
+            cursor: pointer;
+            color: #c44569;
+        }
+
+        testimonials {
+            background: white;
+            padding: 3rem 2rem;
+            margin: 3rem auto;
+            max-width: 1200px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+
+        testimonial-card {
+            background: #ffeef8;
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 1rem 0;
+            border-left: 5px solid #ff6b9d;
+        }
+
+        stars {
+            color: #ffd700;
+            font-size: 1.5rem;
         }
 
         footer {
-            background: #ff1493;
+            background: #c44569;
             color: white;
             text-align: center;
-            padding: 1.5rem;
-            margin-top: 2rem;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            products-grid { grid-template-columns: 1fr; }
+            nav ul { flex-direction: column; gap: 0.5rem; }
         }
     </style>
 </head>
 <body>
+    <cart-icon onclick="openCart()">
+        Carrito
+        <cart-count id="cartCount">0</cart-count>
+    </cart-icon>
+
     <header>
-        <logo>
-            <logo-img>🎂</logo-img>
-            <titulo>
-                <h1>Pastelería Dulce Encanto</h1>
-                <p>Los mejores pasteles artesanales de la ciudad</p>
-            </titulo>
-        </logo>
-        <seleccion>
-            <select>
-                <option>Español</option>
-                <option>English</option>
-                <option>Português</option>
-            </select>
-            <select>
-                <option>Mi Cuenta</option>
-                <option>Iniciar Sesión</option>
-                <option>Registrarse</option>
-                <option>Mis Pedidos</option>
-                <option>Contacto</option>
-                <option>Libro de Reclamaciones</option>
-            </select>
-        </seleccion>
+        <logo>SDB</logo>
+        <h1>Sweet Dreams Bakery</h1>
+        <tagline>Donde cada bocado es un sueño hecho realidad</tagline>
     </header>
 
     <nav>
         <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="productos.html">Productos</a></li>
-            <li><a href="nosotros.html">Nosotros</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-            <li><a href="reclamaciones.html">Libro de Reclamaciones</a></li>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+            <li><a href="#testimonios">Testimonios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
 
-    <section>
-        <h2>Bienvenidos</h2>
-        <p>En Pastelería Dulce Encanto creamos los pasteles más deliciosos con ingredientes frescos y recetas tradicionales. Cada pastel es elaborado con amor y dedicación para hacer de tus momentos especiales algo inolvidable.</p>
-        
-        <galeria>
-            <tarjeta-pastel>
-                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500&q=80" alt="Pastel de Chocolate">
-                <info-pastel>
-                    <h3>Pastel de Chocolate</h3>
-                    <p>Delicioso pastel de chocolate con relleno de trufa</p>
-                </info-pastel>
-            </tarjeta-pastel>
-            
-            <tarjeta-pastel>
-                <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=500&q=80" alt="Pastel de Fresa">
-                <info-pastel>
-                    <h3>Pastel de Fresa</h3>
-                    <p>Suave bizcocho con crema y fresas frescas</p>
-                </info-pastel>
-            </tarjeta-pastel>
-            
-            <tarjeta-pastel>
-                <img src="https://images.unsplash.com/photo-1588195538326-c5b1e5b80d0b?w=500&q=80" alt="Pastel de Vainilla">
-                <info-pastel>
-                    <h3>Pastel de Vainilla</h3>
-                    <p>Clásico pastel de vainilla con betún de mantequilla</p>
-                </info-pastel>
-            </tarjeta-pastel>
-            
-            <tarjeta-pastel>
-                <img src="https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?w=500&q=80" alt="Pastel Red Velvet">
-                <info-pastel>
-                    <h3>Pastel Red Velvet</h3>
-                    <p>Exquisito pastel terciopelo rojo con frosting</p>
-                </info-pastel>
-            </tarjeta-pastel>
-            
-            <tarjeta-pastel>
-                <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=500&q=80" alt="Pastel de Zanahoria">
-                <info-pastel>
-                    <h3>Pastel de Zanahoria</h3>
-                    <p>Pastel húmedo de zanahoria con queso crema</p>
-                </info-pastel>
-            </tarjeta-pastel>
-            
-            <tarjeta-pastel>
-                <img src="https://images.unsplash.com/photo-1535141192574-5d4897c12636?w=500&q=80" alt="Pastel de Frutas">
-                <info-pastel>
-                    <h3>Pastel de Frutas</h3>
-                    <p>Delicioso pastel decorado con frutas frescas</p>
-                </info-pastel>
-            </tarjeta-pastel>
-        </galeria>
-    </section>
+    <hero>
+        <h2>Pasteles Artesanales de Primera Calidad</h2>
+        <p>Elaborados con amor, ingredientes frescos y las mejores recetas tradicionales</p>
+        <cta-button onclick="scrollToProducts()">Ver Nuestros Pasteles</cta-button>
+    </hero>
 
-    <footer>
-        <p>&copy; 2024 Pastelería Dulce Encanto</p>
+    <container>
+        <section-title id="productos">Nuestros Productos Estrella</section-title>
+        
+        <products-grid id="productsGrid"></products-grid>
+    </container>
+
+    <testimonials id="testimonios">
+        <section-title>Lo Que Dicen Nuestros Clientes</section-title>
+        <testimonial-card>
+            <stars>5 estrellas</stars>
+            <p>"¡El mejor pastel de chocolate que he probado! Perfecto para el cumpleaños de mi hija."</p>
+            <strong>- María González</strong>
+        </testimonial-card>
+        <testimonial-card>
+            <stars>5 estrellas</stars>
+            <p>"Calidad excepcional y servicio impecable. Los recomiendo 100%"</p>
+            <strong>- Carlos Ramírez</strong>
+        </testimonial-card>
+        <testimonial-card>
+            <stars>5 estrellas</stars>
+            <p>"El pastel de bodas superó todas mis expectativas. ¡Gracias por hacer nuestro día especial!"</p>
+            <strong>- Ana y Pedro</strong>
+        </testimonial-card>
+    </testimonials>
+
+    <footer id="contacto">
+        <h3>Encuéntranos</h3>
+        <contact-info>
+            <div>Teléfono: +51 999 888 777</div>
+            <div>Email: info@sweetdreams.com</div>
+            <div>Dirección: Av. Principal 123, Puno</div>
+        </contact-info>
+        <p style="margin-top: 2rem;">&copy; 2024 Sweet Dreams Bakery - Todos los derechos reservados</p>
     </footer>
+
+    <modal id="cartModal">
+        <modal-content>
+            <close-modal onclick="closeCart()">&times;</close-modal>
+            <h2 style="color: #c44569;">Tu Carrito</h2>
+            <div id="cartItems"></div>
+            <div style="margin-top: 1rem; text-align: center;">
+                <h3>Total: S/ <span id="cartTotal">0.00</span></h3>
+                <cta-button onclick="checkout()">Finalizar Compra</cta-button>
+            </div>
+        </modal-content>
+    </modal>
+
+    <script>
+        const productos = [
+            {
+                id: 1,
+                nombre: "Pastel de Chocolate Premium",
+                descripcion: "Rico bizcocho de chocolate con relleno de trufa y cobertura de ganache",
+                precio: 85.00,
+                imagen: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500&q=80"
+            },
+            {
+                id: 2,
+                nombre: "Pastel de Fresas Frescas",
+                descripcion: "Delicado bizcocho con crema chantilly y fresas naturales",
+                precio: 75.00,
+                imagen: "https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=500&q=80"
+            },
+            {
+                id: 3,
+                nombre: "Red Velvet Clásico",
+                descripcion: "Suave terciopelo rojo con frosting de queso crema",
+                precio: 90.00,
+                imagen: "https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?w=500&q=80"
+            },
+            {
+                id: 4,
+                nombre: "Torta de Zanahoria",
+                descripcion: "Húmeda torta de zanahoria con nueces y especias",
+                precio: 70.00,
+                imagen: "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=500&q=80"
+            },
+            {
+                id: 5,
+                nombre: "Cheesecake de Arándanos",
+                descripcion: "Cremoso cheesecake con coulis de arándanos",
+                precio: 95.00,
+                imagen: "https://images.unsplash.com/photo-1533134242995-96b4e0b9740b?w=500&q=80"
+            },
+            {
+                id: 6,
+                nombre: "Pastel de Vainilla Elegante",
+                descripcion: "Clásico pastel de vainilla con buttercream suave",
+                precio: 65.00,
+                imagen: "https://images.unsplash.com/photo-1588195538326-c5b1e5b80d0b?w=500&q=80"
+            }
+        ];
+
+        let carrito = [];
+
+        function renderProducts() {
+            const grid = document.getElementById('productsGrid');
+            grid.innerHTML = productos.map(producto => `
+                <product-card onclick="showProductDetails(${producto.id})">
+                    <img src="${producto.imagen}" alt="${producto.nombre}" class="product-image">
+                    <product-info>
+                        <product-name>${producto.nombre}</product-name>
+                        <product-description>${producto.descripcion}</product-description>
+                        <product-price>S/ ${producto.precio.toFixed(2)}</product-price>
+                        <add-to-cart onclick="addToCart(event, ${producto.id})">
+                            Agregar al Carrito 🛒
+                        </add-to-cart>
+                    </product-info>
+                </product-card>
+            `).join('');
+        }
+
+        function addToCart(event, id) {
+            event.stopPropagation();
+            const producto = productos.find(p => p.id === id);
+            carrito.push(producto);
+            updateCartCount();
+            showNotification(`${producto.nombre} agregado al carrito! 🎉`);
+        }
+
+        function updateCartCount() {
+            document.getElementById('cartCount').textContent = carrito.length;
+        }
+
+        function openCart() {
+            const modal = document.getElementById('cartModal');
+            const cartItems = document.getElementById('cartItems');
+            
+            if (carrito.length === 0) {
+                cartItems.innerHTML = '<p style="text-align: center; color: #666;">Tu carrito está vacío 🛒</p>';
+            } else {
+                cartItems.innerHTML = carrito.map((item, index) => `
+                    <div style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; border-bottom: 1px solid #eee;">
+                        <div>
+                            <strong>${item.nombre}</strong><br>
+                            <span style="color: #ff6b9d;">S/ ${item.precio.toFixed(2)}</span>
+                        </div>
+                        <button onclick="removeFromCart(${index})" style="background: #ff6b9d; color: white; border: none; padding: 0.5rem; border-radius: 5px; cursor: pointer;">
+                            🗑️
+                        </button>
+                    </div>
+                `).join('');
+            }
+            
+            const total = carrito.reduce((sum, item) => sum + item.precio, 0);
+            document.getElementById('cartTotal').textContent = total.toFixed(2);
+            
+            modal.style.display = 'flex';
+        }
+
+        function closeCart() {
+            document.getElementById('cartModal').style.display = 'none';
+        }
+
+        function removeFromCart(index) {
+            carrito.splice(index, 1);
+            updateCartCount();
+            openCart();
+        }
+
+        function checkout() {
+            if (carrito.length === 0) {
+                alert('Tu carrito está vacío');
+                return;
+            }
+            alert('¡Gracias por tu compra! 🎉\n\nSerás redirigido a la página de pago...');
+            carrito = [];
+            updateCartCount();
+            closeCart();
+        }
+
+        function showProductDetails(id) {
+            const producto = productos.find(p => p.id === id);
+            alert(`🎂 ${producto.nombre}\n\n${producto.descripcion}\n\nPrecio: S/ ${producto.precio.toFixed(2)}`);
+        }
+
+        function showNotification(message) {
+            const notification = document.createElement('div');
+            notification.textContent = message;
+            notification.style.cssText = `
+                position: fixed;
+                top: 100px;
+                right: 20px;
+                background: #4CAF50;
+                color: white;
+                padding: 1rem 2rem;
+                border-radius: 10px;
+                box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+                z-index: 3000;
+                animation: slideIn 0.3s ease;
+            `;
+            document.body.appendChild(notification);
+            
+            setTimeout(() => {
+                notification.style.animation = 'slideOut 0.3s ease';
+                setTimeout(() => notification.remove(), 300);
+            }, 2000);
+        }
+
+        function scrollToProducts() {
+            document.getElementById('productos').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        window.onclick = function(event) {
+            const modal = document.getElementById('cartModal');
+            if (event.target === modal) {
+                closeCart();
+            }
+        }
+
+        renderProducts();
+    </script>
 </body>
 </html>
