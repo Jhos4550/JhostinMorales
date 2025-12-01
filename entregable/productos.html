@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Productos - El Grano Dorado</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div id="encabezado"></div>
+    
+    <main class="contenedor">
+        <h2>Nuestros Productos</h2>
+        <p class="descripcion_seccion">Cafes tostados artesanalmente</p>
+        
+        <div class="filtros_productos">
+            <button class="filtro_btn activo" data-tipo="todos">Todos</button>
+            <button class="filtro_btn" data-tipo="suave">Suaves</button>
+            <button class="filtro_btn" data-tipo="medio">Medios</button>
+            <button class="filtro_btn" data-tipo="fuerte">Fuertes</button>
+        </div>
+        
+        <div class="lista_productos" id="contenedor_productos">
+            <!-- Los productos se cargan con JavaScript -->
+        </div>
+        
+        <div class="resumen_carrito" id="carrito_compras">
+            <h3>Tu Carrito de Compras</h3>
+            <div id="items_carrito"></div>
+            <div class="total_carrito">
+                Total: $<span id="total_precio">0</span>
+            </div>
+            <button class="boton_carrito" id="vaciar_carrito">Vaciar Carrito</button>
+            <button class="boton_carrito" id="comprar_ahora">Comprar Ahora</button>
+        </div>
+    </main>
+    
+    <div id="pie_pagina"></div>
+    
+    <script src="funciones.js"></script>
+</body>
+</html>

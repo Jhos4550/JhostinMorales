@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto - El Grano Dorado</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div id="encabezado"></div>
+    
+    <main class="contenedor">
+        <div class="informacion_contacto">
+            <h2>Informacion de Contacto</h2>
+            <p>Estamos aqui para responder tus preguntas</p>
+            
+            <div class="detalles_contacto">
+                <div class="detalle_item">
+                    <h3>Nuestra Direccion</h3>
+                    <p>Calle del Cafe 123, Centro Historico</p>
+                    <p>Ciudad, Codigo Postal 12345</p>
+                </div>
+                
+                <div class="detalle_item">
+                    <h3>Telefono</h3>
+                    <p>+34 912 345 678</p>
+                </div>
+                
+                <div class="detalle_item">
+                    <h3>Correo Electronico</h3>
+                    <p>info@granodorado.com</p>
+                </div>
+                
+                <div class="detalle_item">
+                    <h3>Horario de Atencion</h3>
+                    <p>Lunes a Viernes: 9:00 - 18:00</p>
+                    <p>Sabados: 10:00 - 14:00</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="formulario_contacto">
+            <h3>Envianos un Mensaje</h3>
+            <form id="formulario_mensaje">
+                <div class="campo_formulario">
+                    <label>Tu Nombre</label>
+                    <input type="text" id="nombre_contacto" required>
+                </div>
+                
+                <div class="campo_formulario">
+                    <label>Tu Correo Electronico</label>
+                    <input type="email" id="correo_contacto" required>
+                </div>
+                
+                <div class="campo_formulario">
+                    <label>Asunto del Mensaje</label>
+                    <input type="text" id="asunto_contacto" required>
+                </div>
+                
+                <div class="campo_formulario">
+                    <label>Tu Mensaje</label>
+                    <textarea id="mensaje_contacto" rows="5" required></textarea>
+                </div>
+                
+                <button type="submit" class="boton_enviar">Enviar Mensaje</button>
+            </form>
+        </div>
+    </main>
+    
+    <div id="pie_pagina"></div>
+    
+    <script src="funciones.js"></script>
+</body>
+</html>
