@@ -1,39 +1,43 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pastelería Dulce Sabor</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    <title>Tostaderia El Grano Dorado</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
+    <div id="encabezado"></div>
     
-    <header>
-        <div class="logo">
-            <h1>Pastelería Dulce Sabor</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="inicio.html">Inicio</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section>
-            <h2>Bienvenidos a nuestra pastelería</h2>
-            <p>Selecciona una sección del menú para comenzar.</p>
-            <div class="imagen-pastel"></div>
+    <main class="contenedor">
+        <section class="seccion_principal">
+            <h1>Bienvenidos a Tostaderia El Grano Dorado</h1>
+            <div class="imagen_principal">
+                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Granos de cafe">
+            </div>
+            <div class="texto_principal">
+                <p>Desde 1985, nos especializamos en el tostado artesanal de cafe de la mas alta calidad.</p>
+                <p>Visitanos y descubre el sabor autentico del cafe recien tostado.</p>
+                
+                <div class="caracteristicas">
+                    <div class="caracteristica_item">
+                        <h3>Calidad Premium</h3>
+                        <p>Seleccion rigurosa de granos de cafe</p>
+                    </div>
+                    <div class="caracteristica_item">
+                        <h3>Tostado Artesanal</h3>
+                        <p>Proceso tradicional que respeta el sabor</p>
+                    </div>
+                    <div class="caracteristica_item">
+                        <h3>Frescura Garantizada</h3>
+                        <p>Tostamos diariamente para maxima frescura</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2023 Pastelería Dulce Sabor. Todos los derechos reservados.</p>
-    </footer>
+    <div id="pie_pagina"></div>
 
-    <script src="js/script.js"></script>
+    <script src="funciones.js"></script>
 </body>
 </html>
