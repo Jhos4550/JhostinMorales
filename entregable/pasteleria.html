@@ -3,211 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sweet Dreams Bakery - Pastelería Artesanal</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Pastelería Dulce Sabor</title>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <cart-icon onclick="openCart()">
-        Carrito
-        <cart-count id="cartCount">0</cart-count>
-    </cart-icon>
-
+    
     <header>
-        <logo>SDB</logo>
-        <h1>Sweet Dreams Bakery</h1>
-        <tagline>Donde cada bocado es un sueño hecho realidad</tagline>
+        <div class="logo">
+            <h1>Pastelería Dulce Sabor</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#productos">Productos</a></li>
-            <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
-            <li><a href="#testimonios">Testimonios</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
+    <main>
+        <section>
+            <h2>Bienvenidos a nuestra pastelería</h2>
+            <p>Selecciona una sección del menú para comenzar.</p>
+            <div class="imagen-pastel"></div>
+        </section>
+    </main>
 
-    <!-- SECCIÓN HERO -->
-    <section id="inicio">
-        <hero>
-            <h2>Pasteles Artesanales de Primera Calidad</h2>
-            <p>Elaborados con amor, ingredientes frescos y las mejores recetas tradicionales</p>
-            <cta-button onclick="scrollToProducts()">Ver Nuestros Pasteles</cta-button>
-        </hero>
-    </section>
+    <footer>
+        <p>&copy; 2023 Pastelería Dulce Sabor. Todos los derechos reservados.</p>
+    </footer>
 
-    <!-- SECCIÓN PRODUCTOS -->
-    <section id="productos">
-        <container>
-            <section-title>Nuestros Productos Estrella</section-title>
-            
-            <!-- Pastel de Chocolate Premium -->
-            <article class="producto-detalle">
-                <product-card>
-                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500&q=80" alt="Pastel de Chocolate Premium" class="product-image">
-                    <product-info>
-                        <product-name>Pastel de Chocolate Premium</product-name>
-                        <product-description>Rico bizcocho de chocolate con relleno de trufa y cobertura de ganache</product-description>
-                        <product-price>S/ 85.00</product-price>
-                        <add-to-cart onclick="addToCart(event, 1)">
-                            Agregar al Carrito
-                        </add-to-cart>
-                    </product-info>
-                </product-card>
-            </article>
-
-            <!-- Pastel de Fresas Frescas -->
-            <article class="producto-detalle">
-                <product-card>
-                    <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=500&q=80" alt="Pastel de Fresas Frescas" class="product-image">
-                    <product-info>
-                        <product-name>Pastel de Fresas Frescas</product-name>
-                        <product-description>Delicado bizcocho con crema chantilly y fresas naturales</product-description>
-                        <product-price>S/ 75.00</product-price>
-                        <add-to-cart onclick="addToCart(event, 2)">
-                            Agregar al Carrito
-                        </add-to-cart>
-                    </product-info>
-                </product-card>
-            </article>
-
-            <!-- Red Velvet Clásico -->
-            <article class="producto-detalle">
-                <product-card>
-                    <img src="https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?w=500&q=80" alt="Red Velvet Clásico" class="product-image">
-                    <product-info>
-                        <product-name>Red Velvet Clásico</product-name>
-                        <product-description>Suave terciopelo rojo con frosting de queso crema</product-description>
-                        <product-price>S/ 90.00</product-price>
-                        <add-to-cart onclick="addToCart(event, 3)">
-                            Agregar al Carrito
-                        </add-to-cart>
-                    </product-info>
-                </product-card>
-            </article>
-
-            <!-- Torta de Zanahoria -->
-            <article class="producto-detalle">
-                <product-card>
-                    <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=500&q=80" alt="Torta de Zanahoria" class="product-image">
-                    <product-info>
-                        <product-name>Torta de Zanahoria</product-name>
-                        <product-description>Húmeda torta de zanahoria con nueces y especias</product-description>
-                        <product-price>S/ 70.00</product-price>
-                        <add-to-cart onclick="addToCart(event, 4)">
-                            Agregar al Carrito
-                        </add-to-cart>
-                    </product-info>
-                </product-card>
-            </article>
-
-            <!-- Cheesecake de Arándanos -->
-            <article class="producto-detalle">
-                <product-card>
-                    <img src="https://images.unsplash.com/photo-1533134242995-96b4e0b9740b?w=500&q=80" alt="Cheesecake de Arándanos" class="product-image">
-                    <product-info>
-                        <product-name>Cheesecake de Arándanos</product-name>
-                        <product-description>Cremoso cheesecake con coulis de arándanos</product-description>
-                        <product-price>S/ 95.00</product-price>
-                        <add-to-cart onclick="addToCart(event, 5)">
-                            Agregar al Carrito
-                        </add-to-cart>
-                    </product-info>
-                </product-card>
-            </article>
-
-            <!-- Pastel de Vainilla Elegante -->
-            <article class="producto-detalle">
-                <product-card>
-                    <img src="https://images.unsplash.com/photo-1588195538326-c5b1e5b80d0b?w=500&q=80" alt="Pastel de Vainilla Elegante" class="product-image">
-                    <product-info>
-                        <product-name>Pastel de Vainilla Elegante</product-name>
-                        <product-description>Clásico pastel de vainilla con buttercream suave</product-description>
-                        <product-price>S/ 65.00</product-price>
-                        <add-to-cart onclick="addToCart(event, 6)">
-                            Agregar al Carrito
-                        </add-to-cart>
-                    </product-info>
-                </product-card>
-            </article>
-        </container>
-    </section>
-
-    <!-- SECCIÓN SOBRE NOSOTROS -->
-    <section id="sobre-nosotros">
-        <container>
-            <section-title>Sobre Nosotros</section-title>
-            <article class="about-content">
-                <p>Sweet Dreams Bakery es una pastelería artesanal con más de 10 años de experiencia en la creación de pasteles únicos y deliciosos. Cada uno de nuestros productos es elaborado con ingredientes frescos de la más alta calidad.</p>
-                <p>Nuestro compromiso es hacer realidad tus sueños más dulces, creando momentos memorables para todas tus celebraciones especiales.</p>
-            </article>
-        </container>
-    </section>
-
-    <!-- SECCIÓN TESTIMONIOS -->
-    <section id="testimonios">
-        <testimonials>
-            <section-title>Lo Que Dicen Nuestros Clientes</section-title>
-            
-            <article class="testimonio-item">
-                <testimonial-card>
-                    <stars>5 estrellas</stars>
-                    <p>"¡El mejor pastel de chocolate que he probado! Perfecto para el cumpleaños de mi hija."</p>
-                    <strong>- María González</strong>
-                </testimonial-card>
-            </article>
-
-            <article class="testimonio-item">
-                <testimonial-card>
-                    <stars>5 estrellas</stars>
-                    <p>"Calidad excepcional y servicio impecable. Los recomiendo 100%"</p>
-                    <strong>- Carlos Ramírez</strong>
-                </testimonial-card>
-            </article>
-
-            <article class="testimonio-item">
-                <testimonial-card>
-                    <stars>5 estrellas</stars>
-                    <p>"El pastel de bodas superó todas mis expectativas. ¡Gracias por hacer nuestro día especial!"</p>
-                    <strong>- Ana y Pedro</strong>
-                </testimonial-card>
-            </article>
-        </testimonials>
-    </section>
-
-    <!-- SECCIÓN CONTACTO -->
-    <section id="contacto">
-        <footer>
-            <h3>Encuéntranos</h3>
-            <contact-info>
-                <article class="contacto-item">
-                    <div>Teléfono: +51 999 888 777</div>
-                </article>
-                <article class="contacto-item">
-                    <div>Email: info@sweetdreams.com</div>
-                </article>
-                <article class="contacto-item">
-                    <div>Dirección: Av. Principal 123, Puno</div>
-                </article>
-            </contact-info>
-            <p style="margin-top: 2rem;">&copy; 2024 Sweet Dreams Bakery - Todos los derechos reservados</p>
-        </footer>
-    </section>
-
-    <!-- MODAL DEL CARRITO -->
-    <modal id="cartModal">
-        <modal-content>
-            <close-modal onclick="closeCart()">&times;</close-modal>
-            <h2 style="color: #c44569;">Tu Carrito</h2>
-            <div id="cartItems"></div>
-            <div style="margin-top: 1rem; text-align: center;">
-                <h3>Total: S/ <span id="cartTotal">0.00</span></h3>
-                <cta-button onclick="checkout()">Finalizar Compra</cta-button>
-            </div>
-        </modal-content>
-    </modal>
-
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
