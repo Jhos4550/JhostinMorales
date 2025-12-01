@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastelería Dulce Sabor</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Pastelería Dulce Sabor</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>Bienvenidos a nuestra pastelería</h2>
+            <p>Los mejores pasteles y postres hechos con amor y ingredientes de calidad.</p>
+            <div class="imagen-pastel"></div>
+        </section>
+
+        <section id="productos">
+            <h2>Nuestros Productos</h2>
+            <div class="productos-container">
+                <div class="producto">
+                    <h3>Pastel de Chocolate</h3>
+                    <p>Delicioso pastel de chocolate $15.000</p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+                <div class="producto">
+                    <h3>Pastel de Vainilla</h3>
+                    <p>Esponjoso pastel de vainilla $12.000</p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+                <div class="producto">
+                    <h3>Pastel de Fresa</h3>
+                    <p>Fresco pastel de fresa $14.000</p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+                <div class="producto">
+                    <h3>Cheesecake</h3>
+                    <p>Suave cheesecake $16.000</p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="nosotros">
+            <h2>Sobre Nosotros</h2>
+            <p>Somos una pastelería familiar con más de 10 años de experiencia creando los mejores postres para nuestros clientes.</p>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form id="formulario-contacto">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" required></textarea>
+                
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Pastelería Dulce Sabor. Todos los derechos reservados.</p>
+        <p>Dirección: Calle Dulce 123, Ciudad</p>
+        <p>Teléfono: (123) 456-7890</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
