@@ -2,7 +2,7 @@ console.log("Hola Mundo");
 alert("Hola Mundo, esto es un alert") 
 
 function gemela(){
-    document.getElementById('gemela').src='imagenes/gemela.jpg';
+    document.getElementById('torre').src='imagenes/torre.jpg'
 }
 
 function gemela(){
