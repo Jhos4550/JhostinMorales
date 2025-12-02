@@ -6,7 +6,7 @@ function torres(){
 }
 
 function avion(){
-    document.getElementById('torres').src='imagenes/torres.jpg'
+    document.getElementById('avion').src='imagenes/torres.jpg'
 }
 
 function cambiarLogo(){
