@@ -24,4 +24,7 @@ function cambiodeTexto(){
 function fondoAside(){
     document.getElementById('aside').style.background='#98ffffff';
 }
- 
+
+function cambiarColor(){
+    document.getElementById('men0').style.color='#dac23aff';
+}
