@@ -24,6 +24,3 @@ function cambiodeTexto(){
 function fondoAside(){
     document.getElementById('aside').style.background='#98ffffff';
 }
-function torres(){
-    document.getElementById('torres').src='imagenes/torres.jpg';
-}
