@@ -24,3 +24,6 @@ function cambiodeTexto(){
 function fondoAside(){
     document.getElementById('aside').style.background='#98ffffff';
 }
+function destrucido{
+    document.getElementById('destruido').src='imagenes/des.mp4'
+}
