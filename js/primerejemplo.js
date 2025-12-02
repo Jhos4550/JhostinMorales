@@ -2,11 +2,11 @@ console.log("Hola Mundo");
 alert("Hola Mundo, esto es un alert.") 
 
 function torres(){
-    document.getElementById('torres').src='imagenes/avion.jpg'
+    document.getElementById('torres').src='imagenes/avion.jpg';
 }
 
 function avion(){
-    document.getElementById('avion').src='imagenes/torres.jpg'
+    document.getElementById('avion').src='imagenes/torres.jpg';
 }
 
 function cambiarLogo(){
