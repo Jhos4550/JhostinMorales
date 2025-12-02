@@ -1,5 +1,5 @@
 console.log("Hola Mundo");
-alert("Hola Mundo, esto es un alert") 
+alert("Hola Mundo, esto es un alert.") 
 
 function Mostrartorre(){
     document.getElementById('torre').src='imagenes/torre.jpg'
