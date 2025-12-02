@@ -14,7 +14,7 @@ function cambiarLogo(){
 }
 
 function cambiarFondo(){
-    document.getElementById('menu').style.background='#00e1ffff';
+    document.getElementById('menu').style.background='#790000ff';
 }
 
 function cambiodeTexto(){
@@ -22,6 +22,6 @@ function cambiodeTexto(){
 }
 
 function fondoAside(){
-    document.getElementById('aside').style.background='#2fff5cff';
+    document.getElementById('aside').style.background='#98ffffff';
 }
  
