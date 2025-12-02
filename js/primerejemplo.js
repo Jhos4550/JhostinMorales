@@ -1,7 +1,7 @@
 console.log("Hola Mundo");
 alert("Hola Mundo, esto es un alert.") 
 
-function torres(){
+function avion(){
     document.getElementById('torres').src='imagenes/avion.jpg';
 }
 
