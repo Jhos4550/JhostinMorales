@@ -5,7 +5,7 @@ function gemela(){
     document.getElementById('torre').src='imagenes/torre.jpg'
 }
 
-function gemela(){
+function avion(){
     document.getElementById('avion').src='imagenes/avion.jpg'
 }
 
@@ -24,4 +24,4 @@ function cambiodeTexto(){
 function fondoAside(){
     document.getElementById('aside').style.background='#2fff5cff';
 }
-
+ 
