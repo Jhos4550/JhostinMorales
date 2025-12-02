@@ -24,7 +24,6 @@ function cambiodeTexto(){
 function fondoAside(){
     document.getElementById('aside').style.background='#98ffffff';
 }
-function avion(){
-    document.getElementById('avion').src='imagenes/avion.jpg';
-    alert("Po que ta triste mano");
+function torres(){
+    document.getElementById('torres').src='imagenes/torres.jpg';
 }
