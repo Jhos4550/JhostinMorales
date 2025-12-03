@@ -1,17 +1,13 @@
-// js/primerejemplo.js
 console.log("Hola Mundo");
 
 function Avion() {
-    // Cambia la imagen del elemento con id 'avion'
     document.getElementById('avion').src = 'imagenes/avion.jpg';
-    // Mensaje neutral
-    alert("Imagen cambiada a avión");
+    alert("El avión ha cambiado");
 }
 
-function destruido() {
-    // Cambia la misma imagen (puedes cambiar el id si quieres otra imagen)
-    document.getElementById('avion').src = 'imagenes/destruido.png';
-    alert("Imagen cambiada a estado destruido");
+function destruidoo() {
+    document.getElementById('destruido').src = 'imagenes/destruido.png';
+    alert("Imagen destruida cambiada");
 }
 
 function cambiarLogo() {
@@ -23,7 +19,7 @@ function cambiarFondo() {
 }
 
 function cambiodeTexto() {
-    document.getElementById('Subtitulo').textContent = "No cambies p";
+    document.getElementById('Subtitulo').textContent = "Texto cambiado";
 }
 
 function fondoAside() {
