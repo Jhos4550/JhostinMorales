@@ -1,14 +1,14 @@
 console.log("Hola Mundo");
 alert("Hola Mundo, esto es un alert") 
 
-function triste(){
+function avion(){
     document.getElementById('avion').src='imagenes/avion.jpg';
 }
-function feliz(){
-    document.getElementById('torres').src='images/torres.jpg';
+function torres(){
+    document.getElementById('torres').src='imagenes/torres.jpg';
 }
 function cambiarColor(){
-    document.getElementById('menu').style.color='#00ccffff';
+    document.getElementById('menu').src='imagenes/logo2.png';
 
 }
 function cambiarLogo(){
