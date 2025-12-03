@@ -5,8 +5,7 @@ function torres() {
     alert("Este avión ha destruido a las torres gemelas");
 }
 
-function destruido() {
-
+function destruido() { 
     document.getElementById('destruido').src = 'imagenes/destruido.png';
     alert("F bb");
 }
