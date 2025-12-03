@@ -6,9 +6,7 @@ function avion(){
 }
 function feliz(){
     document.getElementById('torres').src='imagenes/avion.jpg';
-}  
-
- 
+}   
 function cambiarLogo(){
     document.getElementById('logo').src='imagenes/logo2.png';
 }
