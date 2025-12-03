@@ -7,11 +7,11 @@ function avion(){
 function torres(){
     document.getElementById('avion').src='imagenes/avion.jpg';
 } 
-function destruido(){
+function avion(){
     document.getElementById('destruido').src='imagenes/destruido.jpg';
 } 
 function cambiarLogo(){
-    document.getElementById('logo').src='imagenes/logo2.png';
+    document.getElementById('Torre').src='imagenes/logo2.png';
 }
 function cambiarFondo(){
      document.getElementById('menu').style.background='#8a0000ff';
