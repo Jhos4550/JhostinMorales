@@ -1,13 +1,17 @@
+// js/primerejemplo.js
 console.log("Hola Mundo");
 
-function torres() {
+function Avion() {
+    // Cambia la imagen del elemento con id 'avion'
     document.getElementById('avion').src = 'imagenes/avion.jpg';
-    alert("Este avión ha destruido a las torres gemelas");
+    // Mensaje neutral
+    alert("Imagen cambiada a avión");
 }
 
 function destruido() {
-    document.getElementById('destruido').src = 'imagenes/destruido.png';
-    alert("F bb");
+    // Cambia la misma imagen (puedes cambiar el id si quieres otra imagen)
+    document.getElementById('avion').src = 'imagenes/destruido.png';
+    alert("Imagen cambiada a estado destruido");
 }
 
 function cambiarLogo() {
