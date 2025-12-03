@@ -1,28 +1,28 @@
 console.log("Hola Mundo");
 
-function torres(){
+function torres() {
     document.getElementById('avion').src = 'imagenes/avion.jpg';
-    alert("Este avion ha destruido a las torres gemelas");
+    alert("Este avión ha destruido a las torres gemelas");
 }
 
-function destruido(){
-    // Cambia la imagen existente con id "avion"
-    document.getElementById('destruido').src = 'imagenes/destruido.png';
+function destruido() {
+    // Cambia la MISMA imagen con id "avion"
+    document.getElementById('destrido').src = 'imagenes/destruido.png';
     alert("F bb");
 }
 
-function cambiarLogo(){
+function cambiarLogo() {
     document.getElementById('logo').src = 'imagenes/logo2.png';
 }
 
-function cambiarFondo(){
+function cambiarFondo() {
     document.getElementById('menu').style.background = '#8a0000ff';
 }
 
-function cambiodeTexto(){
+function cambiodeTexto() {
     document.getElementById('Subtitulo').textContent = "No cambies p";
 }
 
-function fondoAside(){
+function fondoAside() {
     document.getElementById('aside').style.background = '#009919ff';
 }
