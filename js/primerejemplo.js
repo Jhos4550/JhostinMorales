@@ -6,7 +6,7 @@ function torres() {
 }
 
 function destruido() { 
-    document.getElementById('destruido').src = 'imagenes/destruido.png';
+    document.getElementById('destruido').src ='imagenes/destruido.png';
     alert("F bb");
 }
 
