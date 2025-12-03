@@ -4,9 +4,9 @@ alert("Hola Mundo, esto es un alert")
 function avion(){
     document.getElementById('avion').src='imagenes/torres.jpg';
 }
-function torres(){
-    document.getElementById('torre').src='imagenes/avion.jpg';
-}   
+function avion(){
+    document.getElementById('avion').src='imagenes/avion.jpg';
+} 
 function cambiarLogo(){
     document.getElementById('logo').src='imagenes/logo2.png';
 }
