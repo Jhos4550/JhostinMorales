@@ -7,8 +7,8 @@ function avion(){
 function torres(){
     document.getElementById('avion').src='imagenes/avion.jpg';
 } 
-function torres(){
-    document.getElementById('destruccion').src='imagenes/destruido.jpg';
+function avion(){
+    document.getElementById('avion').src='imagenes/destruido.jpg';
 } 
 function cambiarLogo(){
     document.getElementById('Torre').src='imagenes/logo2.png';
