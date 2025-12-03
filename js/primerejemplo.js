@@ -1,12 +1,13 @@
 console.log("Hola Mundo");
- 
+
 function torres(){
     document.getElementById('avion').src = 'imagenes/avion.jpg';
     alert("Este avion ha destruido a las torres gemelas");
 }
 
 function destruido(){
-    document.getElementById('destruido').src = 'imagenes/destruido.png';
+    // Cambia la imagen existente con id "avion"
+    document.getElementById('avion').src = 'imagenes/destruido.png';
     alert("F bb");
 }
 
