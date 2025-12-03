@@ -3,11 +3,11 @@ alert("Hola Mundo, esto es un alert")
 
 function avion(){
     document.getElementById('avion').src='imagenes/torres.jpg';
-    alert("Este avion destryo a las torres gemelas") 
+    alert("Aqui esta las torres intactas") 
 }
 function torres(){
     document.getElementById('avion').src='imagenes/avion.jpg';
-    alert("Aqui estan las torres aun intactas") 
+    alert("Este avion a destruido a las torres gemelas") 
 } 
 function destruido(){
     document.getElementById('destruido').src='imagenes/destruido.jpg';
