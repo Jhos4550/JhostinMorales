@@ -6,7 +6,10 @@ function torres() {
 }
 
 function destruido() { 
-    document.getElementById('destruido').src ='imagenes/destruido.png';
+    // Primero mostramos la imagen que estaba oculta
+    document.getElementById('destruido').style.display = 'inline-block';
+    // Luego cambiamos su fuente
+    document.getElementById('destruido').src = 'imagenes/destruido.png';
     alert("F bb");
 }
 
