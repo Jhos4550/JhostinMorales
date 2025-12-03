@@ -5,7 +5,7 @@ function avion(){
     document.getElementById('avion').src='imagenes/avion.jpg';
 }
 function feliz(){
-    document.getElementById('carita').src='imagenes/torres.jpg';
+    document.getElementById('torres').src='imagenes/torres.jpg';
 }
 function cambiarColor(){
     document.getElementById('menu').style.color='#00ff62ff';
