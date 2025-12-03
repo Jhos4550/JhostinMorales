@@ -7,7 +7,7 @@ function torres() {
 
 function destruido() {
     // Cambia la MISMA imagen con id "avion"
-    document.getElementById('destrido').src = 'imagenes/destruido.png';
+    document.getElementById('destruido').src = 'imagenes/destruido.png';
     alert("F bb");
 }
 
