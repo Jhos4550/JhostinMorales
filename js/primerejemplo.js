@@ -5,10 +5,7 @@ function torres() {
     alert("Este avión ha destruido a las torres gemelas");
 }
 
-function destruido() { 
-    // Primero mostramos la imagen que estaba oculta
-    document.getElementById('destruido').style.display = 'inline-block';
-    // Luego cambiamos su fuente
+function destruido() {
     document.getElementById('destruido').src = 'imagenes/destruido.png';
     alert("F bb");
 }
