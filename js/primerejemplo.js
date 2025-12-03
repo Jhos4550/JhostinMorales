@@ -5,7 +5,7 @@ function avion(){
     document.getElementById('avion').src='imagenes/torres.jpg';
 }
 function torre(){
-    document.getElementById('torre').src='imagenes/avion.jpg';
+    document.getElementById('avion').src='imagenes/avion.jpg';
 } 
 function cambiarLogo(){
     document.getElementById('logo').src='imagenes/logo2.png';
