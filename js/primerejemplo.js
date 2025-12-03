@@ -6,20 +6,18 @@ function avion(){
 }
 function feliz(){
     document.getElementById('torres').src='imagenes/avion.jpg';
-}
-function cambiarColor(){
-    document.getElementById('menu').style.color='#00ff62ff';
+}  
 
-}
+ 
 function cambiarLogo(){
     document.getElementById('logo').src='imagenes/logo2.png';
 }
 function cambiarFondo(){
-     document.getElementById('menu').style.background='#524604';
+     document.getElementById('menu').style.background='#8a0000ff';
 }
 function cambiodeTexto(){
     document.getElementById('Subtitulo').textContent="No cambies p";
 }
 function fondoAside(){
-    document.getElementById('aside').style.background='#000658ff';
+    document.getElementById('aside').style.background='#009919ff';
 }
