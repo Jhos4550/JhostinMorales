@@ -1,6 +1,5 @@
 console.log("Hola Mundo");
-alert("Hola Mundo, esto es un alert");
-
+ 
 function torres(){
     document.getElementById('avion').src = 'imagenes/avion.jpg';
     alert("Este avion ha destruido a las torres gemelas");
