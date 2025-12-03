@@ -12,10 +12,10 @@ function cambiarColor(){
 
 }
 function cambiarLogo(){
-    document.getElementById('logo').src='images/logo2.jpg';
+    document.getElementById('logo').src='imagenes/logo2.jpg';
 }
 function cambiodeTexto(){
-    document.getElementById('Subtitulo').textContent="YA LE SE AL JS";
+    document.getElementById('Subtitulo').textContent="No camvies p";
 }
 function fondoAside(){
     document.getElementById('aside').style.background='#7cff70ff';
