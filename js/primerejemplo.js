@@ -6,7 +6,7 @@ function torres(){
     alert("Este avion a destruido a las torres gemelas") 
 } 
 function destruido(){
-    document.getElementById('destruido').src='imagenes/destruido.jpg';
+document.getElementById("miBoton").src='imagenes/destruido.png';
     alert("F bb") 
 } 
 function cambiarLogo(){
