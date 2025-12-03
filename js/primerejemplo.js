@@ -2,10 +2,10 @@ console.log("Hola Mundo");
 alert("Hola Mundo, esto es un alert") 
 
 function avion(){
-    document.getElementById('avion').src='imagenes/avion.jpg';
+    document.getElementById('avion').src='imagenes/torres.jpg';
 }
 function feliz(){
-    document.getElementById('torres').src='imagenes/torres.jpg';
+    document.getElementById('torres').src='imagenes/avion.jpg';
 }
 function cambiarColor(){
     document.getElementById('menu').style.color='#00ff62ff';
