@@ -8,7 +8,7 @@ function torres(){
     document.getElementById('torres').src='imagenes/torres.jpg';
 }
 function cambiarColor(){
-    document.getElementById('menu').src='imagenes/logo2.png';
+    document.getElementById('menu').style.color='rgba(145, 0, 0, 0.76)'
 
 }
 function cambiarLogo(){
