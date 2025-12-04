@@ -18,7 +18,7 @@ function cambiarLogo() {
 
 function cambiarFondo() {
     document.getElementById('menu').style.background = '#07ff98ff';
-    alert("Mas color quiere");
+    alert("Quiere mas color");
 }
 
 function cambiodeTexto() {
