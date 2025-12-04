@@ -22,7 +22,7 @@ function cambiarFondo() {
 }
 
 function cambiodeTexto() {
-    document.getElementById('Subtitulo').textContent = "Aya, asi eres";
+    document.getElementById('Subtitulo').textContent = "A ya, asi eres";
     alert("No cambies p >:,/ ");
 }
 
@@ -33,4 +33,8 @@ function fondoAside() {
 function cambiarFondo2(){
      document.getElementById('header').style.background='#07ff98ff';
      alert("Mas colorido quiere ");
+}
+function cambiarFondo1(){
+     document.getElementById('footer').style.background='#07ff98ff';
+     alert("Te gusta el color. un poco mas completo en la inferior")
 }
