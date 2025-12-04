@@ -7,7 +7,7 @@ function avion() {
 
 function destruido() {
     document.getElementById('torres').src = 'imagenes/destruido.jpg';
-    alert("F bro");
+    alert("F bb");
 }
 
 function cambiarLogo() {
