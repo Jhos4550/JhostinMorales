@@ -1,32 +1,27 @@
-document.getElementById("btnCalcular").addEventListener("click", function(){
-    let a = parseFloat(document.getElementById("n1").value)
-    let b = parseFloat(document.getElementById("n2").value)
-    let op = document.getElementById("op").value
-    let res = document.getElementById("res")
+document.getElementById("calcular").addEventListener("click", function(){
+    let num1 = parseFloat(document.getElementById("numero1").value);
+    let num2 = parseFloat(document.getElementById("numero2").value);
+    let operacion = document.getElementById("operacion").value;
+    let resultado = document.getElementById("resultado");
 
-    if(isNaN(a) || isNaN(b)){
-        res.textContent = "Ingrese numeros validos"
-        return
+    if(isNaN(num1)||isNaN(num2)){
+        resultado.textContent = "Ingrese números Valido";
+        return;
     }
-
-    function calcular(x, y, oper){
-        switch(oper){
-            case "suma":
-                return x + y
-            case "resta":
-                return x - y
-            case "multiplicacion":
-                return x * y
-            case "division":
-                if(y == 0){
-                    return "No se divide entre cero"
-                }
-                return x / y
-            default:
-                return "Operacion invalida"
-        }
+function calcular(a,b, op){
+    switch (op) {
+        case "suma":
+            return a+b;     
+        case "resta":
+            return a-b;
+        case "multiplicacion":
+            return a*b;
+        case "division":
+            return a/b;
+        default:
+            return "Operación Inválida"
     }
-
-    let final = calcular(a, b, op)
-    res.textContent = "El resultado es: " + final
+}
+let resultadoFinal = calcular(num1,num2,operacion);
+resultado.textContent="El Resultado es: "+resultadoFinal;
 })
