@@ -17,7 +17,8 @@ function cambiarLogo() {
 }
 
 function cambiarFondo() {
-    document.getElementById('menu').style.background = '#8a0000ff';
+    document.getElementById('menu').style.background = '#2cff8bff';
+    alert("Mas colorido quiere la wawa") 
 }
 
 function cambiodeTexto() {
@@ -25,5 +26,6 @@ function cambiodeTexto() {
 }
 
 function fondoAside() {
-    document.getElementById('aside').style.background = '#009919ff';
+    document.getElementById('aside').style.background = '#038d97ff';
+    alert("A, pero el aside mas apagado") 
 }
