@@ -26,16 +26,34 @@
        <section>
         <article>
             <form>
+
     <label>Nombre:</label>
     <input type="text" name="nombre">
+
+    <label>Fecha de nacimiento:</label>
+    <input type="date" name="fecha">
 
     <label>Correo:</label>
     <input type="email" name="correo">
 
-    <label>Edad:</label>
-    <input type="number" name="edad">
+    <label>Genero:</label>
+    <select name="genero">
+        <option value="">Seleccione</option>
+        <option value="masculino">Masculino</option>
+        <option value="femenino">Femenino</option>
+        <option value="otro">Otro</option>
+    </select>
 
-    <button type="reset">Insertar</button>
+    <label>Intereses:</label>
+    <input type="checkbox" name="interes1" value="deportes"> Deportes
+    <input type="checkbox" name="interes2" value="musica"> Musica
+    <input type="checkbox" name="interes3" value="juegos"> Juegos
+
+    <br><br>
+
+    <button type="submit">Enviar</button>
+    <button type="reset">Borrar</button>
+
 </form>
 
         </article>
