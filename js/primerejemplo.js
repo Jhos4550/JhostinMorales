@@ -1,7 +1,7 @@
 console.log("Hola Mundo");
 
 function avion() {
-    document.getElementById('torres').src = 'imagenes/avion.jpg';
+    document.getElementById('avion').src = 'imagenes/avion.jpg';
     alert("El avión que impactó en las torres.");
 }
 
