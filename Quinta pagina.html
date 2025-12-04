@@ -25,7 +25,78 @@
        </nav>
        <section>
         <article>
-            
+            <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario Completo</title>
+</head>
+<body>
+
+    <h2>Formulario de Registro</h2>
+
+    <form>
+
+        <!-- Nombre completo -->
+        <label>Nombre Completo:</label><br>
+        <input type="text" name="nombre" required><br><br>
+
+        <!-- Correo -->
+        <label>Correo Electrónico:</label><br>
+        <input type="email" name="correo" required><br><br>
+
+        <!-- Edad -->
+        <label>Edad:</label><br>
+        <input type="number" name="edad" min="1" required><br><br>
+
+        <!-- Fecha -->
+        <label>Fecha de Nacimiento:</label><br>
+        <input type="date" name="nacimiento" required><br><br>
+
+        <!-- Género -->
+        <label>Género:</label><br>
+        <input type="radio" name="genero" value="Masculino"> Masculino<br>
+        <input type="radio" name="genero" value="Femenino"> Femenino<br>
+        <input type="radio" name="genero" value="Otro"> Otro<br><br>
+
+        <!-- Intereses -->
+        <label>Intereses:</label><br>
+        <input type="checkbox" name="interes" value="Musica"> Música<br>
+        <input type="checkbox" name="interes" value="Deporte"> Deporte<br>
+        <input type="checkbox" name="interes" value="Tecnologia"> Tecnología<br><br>
+
+        <!-- Lista desplegable simple -->
+        <label>País:</label><br>
+        <select name="pais">
+            <option>Perú</option>
+            <option>Argentina</option>
+            <option>México</option>
+            <option>Colombia</option>
+            <option>Chile</option>
+        </select><br><br>
+
+        <!-- Lista múltiple -->
+        <label>Lenguajes que conoces (múltiples opciones):</label><br>
+        <select name="lenguajes" multiple size="4">
+            <option>HTML</option>
+            <option>Python</option>
+            <option>CSS</option>
+            <option>JavaScript</option>
+        </select><br><br>
+
+        <!-- Área de texto -->
+        <label>Mensaje:</label><br>
+        <textarea name="mensaje" rows="5" cols="40"></textarea><br><br>
+
+        <!-- Botones -->
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar</button>
+
+    </form>
+
+</body>
+</html>
+
         </article>
         <article>
            <h2>Calculadora Basica con JS</h2> 
@@ -44,6 +115,11 @@
                     <button id="calcular">Calcular</button>
                     <p id = "resultado"></p>
  
+       
+
+
+
+
 
         </article>
         <aside> </aside>
