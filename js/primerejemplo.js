@@ -2,7 +2,7 @@ console.log("Hola Mundo");
 alert("Hola Mundo, esto es un alert")
 
 function avion() {
-    document.getElementById('avion').src = 'imagenes/avion.jpg';
+    document.getElementById('avioon').src = 'imagenes/avion.jpg';
     alert("El avión que impactó en las torres.");
 }
 
