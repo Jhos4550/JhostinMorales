@@ -31,6 +31,6 @@ function fondoAside() {
     alert("Racista!!!");
 }
 function cambiarFondo2(){
-     document.getElementById('header').style.background='#b209eaff';
-     alert("Fondo nuevo, misma esencia. Pero con más estilo");
+     document.getElementById('header').style.background='#07ff98ff';
+     alert("Mas colorido quiere ");
 }
