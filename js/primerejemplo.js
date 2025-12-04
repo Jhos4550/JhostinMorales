@@ -39,6 +39,6 @@ function cambiarFondo1(){
      alert("Te gusta el color. un poco mas completo en la inferior")
 }
 function cambiodeTexto1(){
-    document.getElementById('titulo1').textContent="Java Scriv";
-    alert("ya no quieres q sea ejemplo");
+    document.getElementById('titulo1').textContent="Java Script";
+    alert("Ya sin ejemplo");
 }
