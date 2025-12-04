@@ -38,7 +38,7 @@ function cambiarFondo1(){
      document.getElementById('footer').style.background='#07ff98ff';
      alert("Te gusta el color. un poco mas completo en la inferior")
 }
-function cambiodeTexto1(){
-    document.getElementById('titulo1').textContent="Java Script";
-    alert("Ya sin ejemplo");
+function cambiodeTexto(){
+    document.getElementById('titulo').textContent="Java Script";
+    alert("Ya, sin ejemplo");
 }
