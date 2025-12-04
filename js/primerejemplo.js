@@ -17,8 +17,7 @@ function cambiarLogo() {
 }
 
 function cambiarFondo() {
-    document.getElementById('menu').style.background = '#2cff8bff';
-    alert("Mas colorido quiere ") 
+    document.getElementById('menu').style.background = '#2cff8bff'; 
 }
 
 function cambiodeTexto() {
