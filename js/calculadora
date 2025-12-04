@@ -1,0 +1,26 @@
+function insertar() {
+    let n1 = Number(document.getElementById("num1").value);
+    let n2 = Number(document.getElementById("num2").value);
+    let op = document.getElementById("operacion").value;
+    let res = "";
+
+    if (isNaN(n1) || isNaN(n2)) {
+        res = "Pon números válidos";
+    } else {
+        if (op === "suma") {
+            res = n1 + n2;
+        } else if (op === "resta") {
+            res = n1 - n2;
+        } else if (op === "multi") {
+            res = n1 * n2;
+        } else if (op === "divi") {
+            if (n2 === 0) {
+                res = "No se puede dividir entre 0";
+            } else {
+                res = n1 / n2;
+            }
+        }
+    }
+
+    document.getElementById("resultado").innerText = res;
+}
