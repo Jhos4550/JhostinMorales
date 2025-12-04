@@ -1,5 +1,5 @@
 console.log("Hola Mundo");
-alert("Hola Mundo, esto es un alert") 
+alert("Hola Mundo, esto es un alert")
 
 function avion() {
     document.getElementById('avion').src = 'imagenes/avion.jpg';
@@ -12,17 +12,21 @@ function destruido() {
 }
 
 function cambiarLogo() {
-    document.getElementById('logo').src = 'imagenes/logo2.png'; 
+    document.getElementById('logo').src = 'imagenes/logo2.png';
+    alert("Modo emo :,c")
 }
 
 function cambiarFondo() {
-    document.getElementById('menu').style.background = '#8a0000ff';
+    document.getElementById('menu').style.background = '#07ff98ff';
+    alert("Mas color quiere") 
 }
 
 function cambiodeTexto() {
-    document.getElementById('Subtitulo').textContent = "Texto cambiado correctamente";
+    document.getElementById('Subtitulo').textContent = "Aya, asi eres";
+    alert("No cambies p >:,/ ")
 }
 
 function fondoAside() {
-    document.getElementById('aside').style.background = '#009919ff';
+    document.getElementById('aside').style.background = '#093333ff';
+    alert("Racista!!!")
 }
