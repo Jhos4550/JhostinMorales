@@ -13,20 +13,24 @@ function destruido() {
 
 function cambiarLogo() {
     document.getElementById('logo').src = 'imagenes/logo2.png';
-    alert("Modo emo :,c")
+    alert("Modo emo :,c");
 }
 
 function cambiarFondo() {
     document.getElementById('menu').style.background = '#07ff98ff';
-    alert("Mas color quiere") 
+    alert("Mas color quiere");
 }
 
 function cambiodeTexto() {
     document.getElementById('Subtitulo').textContent = "Aya, asi eres";
-    alert("No cambies p >:,/ ")
+    alert("No cambies p >:,/ ");
 }
 
 function fondoAside() {
     document.getElementById('aside').style.background = '#093333ff';
-    alert("Racista!!!")
+    alert("Racista!!!");
+}
+function cambiarFondo2(){
+     document.getElementById('header').style.background='#b209eaff';
+     alert("Fondo nuevo, misma esencia. Pero con más estilo");
 }
