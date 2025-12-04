@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Quinta pagina</title>
+        <title>Quinta Pagina</title>
         <link rel="icon" href="imagenes/logo.jpg">
                 <link rel="stylesheet" href="css/estilos.css">
     </head>
@@ -25,39 +25,31 @@
        </nav>
        <section>
         <article>
-            <form>
-
-    <label>Nombre:</label>
-    <input type="text" name="nombre">
-
-    <label>Fecha de nacimiento:</label>
-    <input type="date" name="fecha">
-
-    <label>Correo:</label>
-    <input type="email" name="correo">
-
-    <label>Genero:</label>
-    <select name="genero">
-        <option value="">Seleccione</option>
-        <option value="masculino">Masculino</option>
-        <option value="femenino">Femenino</option>
-        <option value="otro">Otro</option>
-    </select>
-
-    <label>Intereses:</label>
-    <input type="checkbox" name="interes1" value="deportes"> Deportes
-    <input type="checkbox" name="interes2" value="musica"> Musica
-    <input type="checkbox" name="interes3" value="juegos"> Juegos
-
-    <br><br>
-
-    <button type="submit">Enviar</button>
-    <button type="reset">Borrar</button>
-
-</form>
-
+            
         </article>
         <article>
+            <div id="calculadora">
+    <h3>Calculadora Básica</h3>
+
+    <label>Número 1:</label>
+    <input type="number" id="num1"><br><br>
+
+    <label>Número 2:</label>
+    <input type="number" id="num2"><br><br>
+
+    <label>Operación:</label>
+    <select id="operacion">
+        <option value="suma">Sumar</option>
+        <option value="resta">Restar</option>
+        <option value="multi">Multiplicar</option>
+        <option value="divi">Dividir</option>
+    </select><br><br>
+
+    <button onclick="insertar()">Insertar</button>
+
+    <p><b>Resultado:</b> <span id="resultado"></span></p>
+</div>
+
         </article>
         <aside> </aside>
        </section>
