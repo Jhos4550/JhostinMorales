@@ -1,32 +1,27 @@
-function sumar() {
-    let a = document.getElementById("num1").value
-    let b = document.getElementById("num2").value
-    let r = Number(a) + Number(b)
-    document.getElementById("resultado").innerText = r
-}
+let num1 = document.getElementById("num1")
+let num2 = document.getElementById("num2")
+let resultado = document.getElementById("resultado")
 
-function restar() {
-    let a = document.getElementById("num1").value
-    let b = document.getElementById("num2").value
-    let r = Number(a) - Number(b)
-    document.getElementById("resultado").innerText = r
-}
+document.getElementById("btnSumar").addEventListener("click", function() {
+    let r = Number(num1.value) + Number(num2.value)
+    resultado.innerText = r
+})
 
-function multiplicar() {
-    let a = document.getElementById("num1").value
-    let b = document.getElementById("num2").value
-    let r = Number(a) * Number(b)
-    document.getElementById("resultado").innerText = r
-}
+document.getElementById("btnRestar").addEventListener("click", function() {
+    let r = Number(num1.value) - Number(num2.value)
+    resultado.innerText = r
+})
 
-function dividir() {
-    let a = document.getElementById("num1").value
-    let b = document.getElementById("num2").value
+document.getElementById("btnMultiplicar").addEventListener("click", function() {
+    let r = Number(num1.value) * Number(num2.value)
+    resultado.innerText = r
+})
 
-    if (b == 0) {
-        document.getElementById("resultado").innerText = "No se puede dividir entre cero"
+document.getElementById("btnDividir").addEventListener("click", function() {
+    if (Number(num2.value) == 0) {
+        resultado.innerText = "No se puede dividir entre cero"
     } else {
-        let r = Number(a) / Number(b)
-        document.getElementById("resultado").innerText = r
+        let r = Number(num1.value) / Number(num2.value)
+        resultado.innerText = r
     }
-}
+})
