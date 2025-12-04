@@ -40,7 +40,7 @@ function cambiarFondo1(){
 }
 function cambiodeTextoo(){
     document.getElementById('tituloo').textContent="Java Script";
-    alert("Ya, sin practica");
+    alert("Ya, sin Practica");
 }
 function subtitulo(){
     document.getElementById('subtitulo').textContent="Ejemplo";
