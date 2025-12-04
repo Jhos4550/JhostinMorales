@@ -1,27 +1,32 @@
-let num1 = document.getElementById("num1")
-let num2 = document.getElementById("num2")
-let resultado = document.getElementById("resultado")
+document.getElementById("btnCalcular").addEventListener("click", function(){
+    let a = parseFloat(document.getElementById("n1").value)
+    let b = parseFloat(document.getElementById("n2").value)
+    let op = document.getElementById("op").value
+    let res = document.getElementById("res")
 
-document.getElementById("btnSumar").addEventListener("click", function() {
-    let r = Number(num1.value) + Number(num2.value)
-    resultado.innerText = r
-})
-
-document.getElementById("btnRestar").addEventListener("click", function() {
-    let r = Number(num1.value) - Number(num2.value)
-    resultado.innerText = r
-})
-
-document.getElementById("btnMultiplicar").addEventListener("click", function() {
-    let r = Number(num1.value) * Number(num2.value)
-    resultado.innerText = r
-})
-
-document.getElementById("btnDividir").addEventListener("click", function() {
-    if (Number(num2.value) == 0) {
-        resultado.innerText = "No se puede dividir entre cero"
-    } else {
-        let r = Number(num1.value) / Number(num2.value)
-        resultado.innerText = r
+    if(isNaN(a) || isNaN(b)){
+        res.textContent = "Ingrese numeros validos"
+        return
     }
+
+    function calcular(x, y, oper){
+        switch(oper){
+            case "suma":
+                return x + y
+            case "resta":
+                return x - y
+            case "multiplicacion":
+                return x * y
+            case "division":
+                if(y == 0){
+                    return "No se divide entre cero"
+                }
+                return x / y
+            default:
+                return "Operacion invalida"
+        }
+    }
+
+    let final = calcular(a, b, op)
+    res.textContent = "El resultado es: " + final
 })
