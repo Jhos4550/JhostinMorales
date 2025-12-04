@@ -38,3 +38,7 @@ function cambiarFondo1(){
      document.getElementById('footer').style.background='#07ff98ff';
      alert("Te gusta el color. un poco mas completo en la inferior")
 }
+function textosup(){
+    document.getElementById('titulo1').textContent="Java Scriv";
+    alert("ya no quieres q sea ejemplo");
+}
