@@ -1,12 +1,12 @@
 console.log("Hola Mundo");
 
-function Avion() {
+function avion() {
     document.getElementById('avion').src = 'imagenes/avion.jpg';
-    alert("El avion q impacto en la torres gemelas");
+    alert("El avion que impacto en la torres gemelas");
 }
 
-function destruidoo() {
-    document.getElementById('destruido').src = 'imagenes/destruido.png';
+function destruido() {
+    document.getElementById('destruido').src = 'imagenes/destruido.jpg';
     alert("F bb");
 }
 
