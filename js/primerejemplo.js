@@ -1,8 +1,8 @@
 console.log("Hola Mundo");
 alert("Hola Mundo, esto es un alert")
 
-function avionn() {
-    document.getElementById('avionn').src = 'imagenes/avion.jpg';
+function avion() {
+    document.getElementById('torres').src = 'imagenes/avion.jpg';
     alert("El avión que impactó en las torres.");
 }
 
