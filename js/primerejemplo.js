@@ -1,13 +1,13 @@
 console.log("Hola Mundo");
 
 function avion() {
-    document.getElementById('avion').src='imagenes/avion.jpg';
-    alert("El avion que impacto en la torres gemelas");
+    document.getElementById('torres').src = 'imagenes/avion.jpg';
+    alert("El avión que impactó en las torres.");
 }
 
 function destruido() {
-    document.getElementById('destruido').src='imagenes/destruido.jpg';
-    alert("F bb");
+    document.getElementById('torres').src = 'imagenes/destruido.jpg';
+    alert("F bro");
 }
 
 function cambiarLogo() {
@@ -19,7 +19,7 @@ function cambiarFondo() {
 }
 
 function cambiodeTexto() {
-    document.getElementById('Subtitulo').textContent = "Texto cambiado";
+    document.getElementById('Subtitulo').textContent = "Texto cambiado correctamente";
 }
 
 function fondoAside() {
