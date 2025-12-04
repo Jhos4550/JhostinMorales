@@ -1,8 +1,9 @@
 console.log("Hola Mundo");
+alert("Hola Mundo, esto es un alert") 
 
 function avion() {
     document.getElementById('avion').src = 'imagenes/avion.jpg';
-    alert("El avión que impactó en las torres.");
+    alert("El avión que impactó en las torres :,v");
 }
 
 function destruido() {
@@ -12,6 +13,7 @@ function destruido() {
 
 function cambiarLogo() {
     document.getElementById('logo').src = 'imagenes/logo2.png';
+    alert("Modo emo :,c") 
 }
 
 function cambiarFondo() {
