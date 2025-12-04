@@ -2,12 +2,12 @@ console.log("Hola Mundo");
 
 function Avion() {
     document.getElementById('avion').src = 'imagenes/avion.jpg';
-    alert("El avión ha cambiado");
+    alert("El avion q impacto en la torres gemelas");
 }
 
 function destruidoo() {
     document.getElementById('destruido').src = 'imagenes/destruido.png';
-    alert("Imagen destruida cambiada");
+    alert("F bb");
 }
 
 function cambiarLogo() {
