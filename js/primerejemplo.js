@@ -42,7 +42,7 @@ function cambiodeTextoo(){
     document.getElementById('tituloo').textContent="Java Script";
     alert("Ya, sin ejemplo");
 }
-function cambiodesubtitulo(){
+function subtitulo(){
     document.getElementById('subtitulo').textContent="Ejemplo";
     alert("Es muy obvio dices");
 }
