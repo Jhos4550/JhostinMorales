@@ -1,82 +1,67 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Quinta Pagina</title>
-        <link rel="icon" href="imagenes/logo.jpg">
-                <link rel="stylesheet" href="css/estilos.css">
+        <title>Primer Formulario
+
+        </title>
+        <link rel="icon" href="images/logo.jpg">
+         <link rel="stylesheet" href="css/estilos.css">
+         
     </head>
     <body>
-       <header>
-            <img src="imagenes/logo.jpg" alt="logo senati" with="300" height="300">
-            <h1></h1>
+
+       <header><a href="index.html">
+            <img src="images/logo.jpg" alt="logo senati" with="300" height="300">
+            </a>
+            <h1>FORMULARIOS</h1>
             <h2></h2>
        </header>
        <nav>
           <ul id="menu">
-            <li><a href="index.html">Inicio</a></li>
-             <li><a href="Mi Primera Pagina.html">Primera Pagina</a></li>
+             <li><a href="index.html">Inicio</a></li>
+             <li><a href="Mi primera Pagina.html">Primera Pagina</a></li>
             <li><a href="Segunda Pagina.html">Segunda Pagina</a></li>
             <li><a href="Tercera Pagina.html">Tercera Pagina</a></li>
             <li><a href="Cuarta pagina.html">Cuarta Pagina</a></li>
              <li><a href="Quinta pagina.html">Quinta Pagina</a></li>
-             <li><a href="Personal.html">Pagina Personal</a></li>
-            <li><a href="entregable/index.html">ENTREGABLE</a></li>
+             <li><a href="personal.html">Pagina Personal</a></li>
+               <li><a href="entregable/paginabienvenida/index.html">ENTREGABLE</a></li>
            </ul> 
        </nav>
        <section>
         <article>
-            <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Formulario Completo</title>
-</head>
-<body>
-
+         <H3>Mi primer Formulario</H3>
+         <form action="" method="post">
+            <fieldset>
                <legend>Datos personales</legend>
+                  <input type="text" name="nombre" placeholder="Nombre completo">
+                  <input type="email" name="correo" placeholder="Correo electrónico">
+            </fieldset>
 
-    <form>
+            <input type="email" name="correo" placeholder="email">
+            <input type="number" name="edad" min="1" max="100">
+            <input type="date" name="fecha_nacimiento">
+            <input type="file" name="documento">
+            <h4> Botones de radio </h4>
+            <p>Género:</p>
+               <label><input type="radio" name="genero" value="masculino"> Masculino</label>
+               <label><input type="radio" name="genero" value="femenino"> Femenino</label>
+               <label><input type="radio" name="genero" value="otro"> Otro</label>
 
-        <!-- Nombre completo -->
-        <label>Nombre Completo:</label><br>
-        <input type="text" name="nombre" required><br><br>
-
-        <!-- Correo -->
-        <label>Correo Electrónico:</label><br>
-        <input type="email" name="correo" required><br><br>
-
-        <!-- Edad -->
-        <label>Edad:</label><br>
-        <input type="number" name="edad" min="1" required><br><br>
-
-        <!-- Fecha -->
-        <label>Fecha de Nacimiento:</label><br>
-        <input type="date" name="nacimiento" required><br><br>
-
-        <!-- Género -->
-        <label>Género:</label><br>
-        <input type="radio" name="genero" value="Masculino"> Masculino<br>
-        <input type="radio" name="genero" value="Femenino"> Femenino<br>
-        <input type="radio" name="genero" value="Otro"> Otro<br><br>
-
-        <!-- Intereses -->
-        <label>Intereses:</label><br>
-        <input type="checkbox" name="interes" value="Musica"> Música<br>
-        <input type="checkbox" name="interes" value="Deporte"> Deporte<br>
-        <input type="checkbox" name="interes" value="Tecnologia"> Tecnología<br><br>
-
-        <!-- Lista desplegable simple -->
-        <label>País:</label><br>
-        <select name="pais">
-            <option>Perú</option>
-            <option>Argentina</option>
-            <option>México</option>
-            <option>Colombia</option>
-            <option>Chile</option>
-        </select><br><br>
-
-        <!-- Lista múltiple -->
-                    </select>
+            <h4>Casillas</h4>
+            <p>Intereses:</p>
+            <label><input type="checkbox" name="interes" value="musica"> Música</label>
+            <label><input type="checkbox" name="interes" value="cine"> Cine</label>
+            <label><input type="checkbox" name="interes" value="deporte"> Deporte</label>
+            <label><input type="checkbox" name="interes" value="programar"> Programar</label>
+            
+            <h4>Lista desplegable simple </h4>
+            <select name="pais">
+               <option value="ar">Argentina</option>
+               <option value="co">Colombia</option>
+                <option value="mx">México</option>
+                <option value="pe">Perú</option>
+            </select>
             <h4>Lista con múltiples opciones</h4>
             <select name="cursos" multiple size="1">
                <option value="html">HTML</option>
@@ -84,28 +69,20 @@
                <option value="js">JavaScript</option>
                <option value="php">PHP</option>
             </select>
+            <h4>Área de texto (varias líneas)</h4>
+            <textarea name="comentarios" rows="4" cols="40" placeholder="aqui ponga sus comentarios"></textarea>
+            <h4>Botones</h4>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+            <button type="button" onclick="alert('Hola')">Haz clic</button>
 
 
-        <!-- Área de texto -->
-        <label>Mensaje:</label><br>
-        <textarea name="mensaje" rows="5" cols="40"></textarea><br><br>
-
-        <!-- Botones -->
-        <button type="submit">Enviar</button>
-        <button type="reset">Borrar</button>
-
-    </form>
-
-</body>
-</html>
-
-
-</body>
-</html>
-
-        </article>
+   
+            </form>
+            <iframe src="https://senatipe-my.sharepoint.com/personal/agonzalezq_senati_pe/_layouts/15/embed.aspx?UniqueId=9d891c07-5cc0-4859-9225-4ccdb647045f&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="560" height="315" frameborder="0" scrolling="no" allowfullscreen title="202520-PIAD-218-TAL-NRC_12126001652816-20251120_133954-Grabación de la reunión.mp4"></iframe>
+      </article>
         <article>
-           <h2>Calculadora Basica con JS</h2> 
+                 <h2>Calculadora Basica con JS</h2> 
                    <label for="numero1">Número 1: </label>
                     <input type="number" id="numero1"><br>
                     <label for="numero2">Número 2: </label>
@@ -120,22 +97,24 @@
                     </select><br>
                     <button id="calcular">Calcular</button>
                     <p id = "resultado"></p>
- 
-       
+
+                    <iframe src="https://senatipe-my.sharepoint.com/personal/agonzalezq_senati_pe/_layouts/15/embed.aspx?UniqueId=9d891c07-5cc0-4859-9225-4ccdb647045f&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="560" height="315" frameborder="0" scrolling="no" allowfullscreen title="202520-PIAD-218-TAL-NRC_12126001652816-20251120_133954-Grabación de la reunión.mp4"></iframe>
 
 
-
-
-                    
         </article>
-        <aside> </aside>
+        <aside>
+
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/k85mRPqvMbE?si=OAD81fLyApxpOV4O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          
+      </aside>
        </section>
-  <footer>
-             <a href="https://github.com/arnoldbgq/arnoldgonzalez" target="_blank">Repositorio del Instructor</a>
-         <a href="https://arnoldbgq.github.io/arnoldgonzalez/" target="_blank">Página del Instructor</a>
-         <a href="https://github.com/Jhos4550/JhostinMorales">Repositorio de Jhostin</a>
+       <footer>
+         <a href="https://github.com/arnoldbgq/arnoldgonzalez" target="_blank">Repositorio del Instructor</a>
+         <a href="https://arnoldbgq.github.io/arnoldgonzalez/" target="_blank">Página del Instructor</a> 
          <a href="https://senati.blackboard.com" target="_blank">Blackboard</a>
-            <p>2025 - Segundo Semestre - Todo los Derechos Reservados</p>
-       </footer>
+            <p>&copy;2025 - Segundo Semestre - Todo los Derechos Reservados  - agonzalezq@senati.pe</p>
+              <script src="js/calculadora.js"></script>
     </body>
 </html>
+
+
