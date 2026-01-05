@@ -36,7 +36,7 @@ function cambiarFondo2(){
 }
 function cambiarFondo1(){
      document.getElementById('footer').style.background='#07ff98ff';
-     alert("Te gusta el color. un poco mas completo en la inferior")
+     alert("Te gusta el color. un poco mas completo en la parte inferior")
 }
 function cambiodeTextoo(){
     document.getElementById('tituloo').textContent="Java Script";
